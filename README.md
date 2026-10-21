@@ -12,7 +12,7 @@ Sitio estático (HTML + CSS + JS puro, sin dependencias ni build step).
 | Estilos | CSS3 (custom properties, grid, flexbox) |
 | Interactividad | Vanilla JS (sin frameworks) |
 | Hosting | GitHub Pages (`main` → `/`) |
-| Deploy | GitHub Actions (`.github/workflows/pages.yml`) |
+| Deploy | Automático en cada push a `main` (build de rama) |
 
 ## Estructura
 
@@ -20,8 +20,7 @@ Sitio estático (HTML + CSS + JS puro, sin dependencias ni build step).
 .
 ├── index.html                     # página única (todas las secciones)
 ├── .nojekyll                      # desactiva Jekyll en Pages
-├── .github/
-│   └── workflows/pages.yml        # deploy automático a GitHub Pages
+├── .gitignore
 └── assets/
     ├── css/style.css              # tema dark tipo terminal
     ├── js/main.js                 # nav, scroll-spy, lightbox, filtros, tabs
@@ -60,8 +59,9 @@ git commit -m "docs: actualiza el portafolio"
 git push origin main
 ```
 
-El workflow de GitHub Actions despliega automáticamente a GitHub Pages.
+GitHub Pages reconstruye y publica el sitio automáticamente en cada push a `main`.
 
 ## Activar Pages (si es la primera vez)
 
-`Settings` → `Pages` → `Source`: **GitHub Actions**.
+`Settings` → `Pages` → `Build and deployment` → **Source: Deploy from a branch**,
+**Branch: `main` / `/ (root)`**.
