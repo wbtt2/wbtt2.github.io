@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Francisco · wbt — Desarrollador de plugins Minecraft (Spigot/Paper)</title>
+<meta name="description" content="Portafolio de Francisco (wbt / @wbtt2): mantenimiento y desarrollo de plugins para Minecraft (Spigot, Paper) en Java, Kotlin, Python y C#. MongoDB, Redis, PostgreSQL, MySQL. Azure y AWS.">
+<meta name="author" content="wbt">
+<meta name="theme-color" content="#0a0e14">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Francisco · wbt — Portafolio">
+<meta property="og:description" content="Desarrollador de plugins para Minecraft (Spigot/Paper). Java, Kotlin, Python, C#. MongoDB, Redis, PostgreSQL, MySQL. Azure y AWS.">
+<meta property="og:image" content="https://wbtt2.github.io/assets/img/project-cobalt-spigot.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%98%84%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-glow" aria-hidden="true"></div>
+
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#hero" class="brand">
+      <span class="brand-prompt">&gt;</span><span class="brand-name">wbt</span><span class="brand-cursor">_</span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="Principal">
+      <a href="#perfil">Perfil</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#stack">Stack</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#galeria">Galería</a>
+      <a href="#codigo">Código</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-progress"><span id="navProgress"></span></div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <p class="hero-eyebrow reveal"><span class="dot"></span> disponible para proyectos &amp; mantenimiento</p>
+      <h1 class="reveal">
+        Hola, soy <span class="grad">Francisco</span><br>
+        <span class="hero-role">desarrollador de plugins</span>
+      </h1>
+      <p class="hero-sub reveal">
+        Mantengo y construyo plugins para servidores de <strong>Minecraft</strong> (Spigot, Paper y forks).
+        Me especializo en <span class="hl">Java</span>, <span class="hl">Kotlin</span>,
+        <span class="hl">Python</span> y <span class="hl">C#</span>, con datos en
+        <span class="hl">MongoDB</span>, <span class="hl">Redis</span>, <span class="hl">PostgreSQL</span> y
+        <span class="hl">MySQL</span>, desplegados en <span class="hl">Azure</span> y <span class="hl">AWS</span>.
+      </p>
+
+      <div class="hero-actions reveal">
+        <a href="#proyectos" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          Ver proyectos
+        </a>
+        <a href="https://github.com/wbtt2" class="btn btn-ghost" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 1.7 2.6 1.2 3.3.9.1-.7.4-1.2.7-1.5-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C17.3 4.7 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .4.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5Z"/></svg>
+          GitHub
+        </a>
+      </div>
+
+      <div class="hero-stats reveal">
+        <div class="stat"><b data-count="8">0</b><span>proyectos</span></div>
+        <div class="stat"><b data-count="5">0</b><span>lenguajes</span></div>
+        <div class="stat"><b data-count="4">0</b><span>motores DB</span></div>
+        <div class="stat"><b data-count="2">0</b><span>clouds</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal">
+      <div class="avatar-wrap">
+        <div class="avatar-ring"></div>
+        <img class="avatar" src="assets/img/avatar.png" alt="Foto de perfil de Francisco (@wbtt2)" width="400" height="400">
+        <div class="avatar-tag"><span class="dot"></span> wbt</div>
+      </div>
+      <div class="terminal" id="terminal">
+        <div class="term-bar">
+          <span class="term-dot r"></span><span class="term-dot y"></span><span class="term-dot g"></span>
+          <span class="term-title">wbt@centry:~</span>
+        </div>
+        <div class="term-body" id="termBody">
+          <p><span class="t-prompt">wbt@centry</span>:<span class="t-path">~</span>$ whoami</p>
+          <p class="t-out">Francisco — <span class="t-accent">wbt</span> · Minecraft Plugin Developer</p>
+          <p><span class="t-prompt">wbt@centry</span>:<span class="t-path">~</span>$ cat stack.txt</p>
+          <p class="t-out">Java · Kotlin · Python · C#</p>
+          <p class="t-out">MongoDB · Redis · PostgreSQL · MySQL</p>
+          <p class="t-out">Azure · AWS</p>
+          <p><span class="t-prompt">wbt@centry</span>:<span class="t-path">~</span>$ ls ~/projects</p>
+          <p class="t-out">Pipeline-AntiExploits · CobaltSpigot · Lumen</p>
+          <p class="t-out">Morgan · Nobody · HubCore · Moon</p>
+          <p><span class="t-prompt">wbt@centry</span>:<span class="t-path">~</span>$ <span class="t-cursor"></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#perfil" class="scroll-hint" aria-label="Desplazar">
+    <span></span>
+  </a>
+</section>
+
+<!-- ============ PERFIL ============ -->
+<section class="section" id="perfil">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="sec-num">01</span>
+      <h2 class="sec-title"><span class="t-prompt">./</span>perfil</h2>
+      <p class="sec-sub">Quién soy y qué hago</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-main reveal">
+        <p>
+          Soy <strong>Francisco</strong> (<span class="mono">@wbtt2</span>), detrás de <span class="mono">Centry Organizations</span>.
+          Mi trabajo consiste en <strong>dar mantenimiento a plugins y servidores Spigot/Paper</strong> y en
+          <strong>crear plugins a medida</strong> para servidores y jugadores: desde sistemas de rangos, menus y
+          scoreboards hasta anticheats a nivel de paquete y herramientas de administración.
+        </p>
+        <p>
+          Trabajo con <strong>Java</strong> y <strong>Kotlin</strong> sobre la API de Bukkit/Spigot y <strong>ProtocolLib</strong>,
+          cuidando la <strong>compatibilidad multi-versión</strong> (1.8.8 hasta 1.21) con reflexión y sin depender de
+          mapeos NMS. Cuando toca, me muevo a <strong>Python</strong> para tooling, <strong>C#</strong> para plugins de
+          Bedrock y herramientas .NET, y a la <strong>nube</strong> (<strong>Azure</strong> y <strong>AWS</strong>) para la
+          infraestructura y los pipelines de despliegue.
+        </p>
+        <p>
+          En el lado de datos uso <strong>MongoDB</strong> para persistencia documental, <strong>Redis</strong> para caché y
+          colas, y <strong>PostgreSQL</strong>/<strong>MySQL</strong> cuando el modelo es relacional.
+        </p>
+
+        <div class="about-facts">
+          <div class="fact"><span class="fact-k">Nombre</span><span class="fact-v">Francisco (@wbtt2)</span></div>
+          <div class="fact"><span class="fact-k">Rol</span><span class="fact-v">Plugin Developer &amp; Maintainer</span></div>
+          <div class="fact"><span class="fact-k">Especialidad</span><span class="fact-v">Spigot / Paper / Folia</span></div>
+          <div class="fact"><span class="fact-k">Organización</span><span class="fact-v">Centry Organizations</span></div>
+          <div class="fact"><span class="fact-k">Discord</span><span class="fact-v">@wbbtt</span></div>
+          <div class="fact"><span class="fact-k">Ubicación</span><span class="fact-v">Remoto</span></div>
+        </div>
+      </div>
+
+      <aside class="about-side reveal">
+        <div class="side-card">
+          <h3><span class="t-prompt">$</span> En una frase</h3>
+          <p>Construyo y mantengo la infraestructura de plugins que hace que un servidor de Minecraft funcione de forma estable, segura y configurable.</p>
+        </div>
+        <div class="side-card">
+          <h3><span class="t-prompt">$</span> Servicios</h3>
+          <ul class="tick-list">
+            <li>Mantenimiento de plugins existentes</li>
+            <li>Plugins a medida para servidores</li>
+            <li>Sistemas de ranks, friends y permisos</li>
+            <li>Anti-exploit y protección a nivel de paquete</li>
+            <li>Dashboards web y paneles de control</li>
+            <li>Despliegue en Azure / AWS y CI/CD</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCIA ============ -->
+<section class="section section-alt" id="experiencia">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="sec-num">02</span>
+      <h2 class="sec-title"><span class="t-prompt">./</span>experiencia</h2>
+      <p class="sec-sub">Trayectoria y foco</p>
+    </div>
+
+    <div class="timeline">
+      <article class="tl-item reveal">
+        <div class="tl-marker"><span></span></div>
+        <div class="tl-card">
+          <div class="tl-head">
+            <h3>Mantenimiento de plugins &amp; servidores Spigot/Paper</h3>
+            <span class="tl-tag">Centry Organizations</span>
+          </div>
+          <p>
+            Mantenimiento continuo de plugins en producción: corrección de errores, adaptación a nuevas
+            versiones de Minecraft, optimización de rendimiento y refactorización de código legado.
+            También el soporte directo a servidores y la resolución de incidencias en caliente.
+          </p>
+          <div class="chips"><span>Spigot</span><span>Paper</span><span>Folia</span><span>ProtocolLib</span><span>Vault</span><span>PlaceholderAPI</span></div>
+        </div>
+      </article>
+
+      <article class="tl-item reveal">
+        <div class="tl-marker"><span></span></div>
+        <div class="tl-card">
+          <div class="tl-head">
+            <h3>Desarrollo de plugins a medida</h3>
+            <span class="tl-tag">Freelance / Servers</span>
+          </div>
+          <p>
+            Diseño e implementación de plugins completos para servidores y usuarios finales: sistema de
+            rangos con conversión desde otros cores, sistema de amigos y聊天室 de staff, menús configurables,
+            scoreboards y tablist con placeholders, crates, hologramas, bossbars y utilidades de packet.
+          </p>
+          <div class="chips"><span>Java</span><span>Kotlin</span><span>Gradle</span><span>Maven</span><span>Shaded JARs</span></div>
+        </div>
+      </article>
+
+      <article class="tl-item reveal">
+        <div class="tl-marker"><span></span></div>
+        <div class="tl-card">
+          <div class="tl-head">
+            <h3>Anti-exploit y seguridad a nivel de packet</h3>
+            <span class="tl-tag">Pipeline</span>
+          </div>
+          <p>
+            Construcción de <strong>Pipeline</strong>: protección a nivel de paquete para Paper/Spigot que
+            bloquea crash-packets, payloads sobredimensionados y packet-spam, con hook de Netty por reflexión
+            (sin fork y sin depender de mapeos NMS), sistema de Violation Level con decaimiento, límites por
+            tipo de paquete y panel web embebido con logs por jugador.
+          </p>
+          <div class="chips"><span>Java 17+</span><span>Netty</span><span>Reflection</span><span>httpserver</span><span>Discord Webhook</span></div>
+        </div>
+      </article>
+
+      <article class="tl-item reveal">
+        <div class="tl-marker"><span></span></div>
+        <div class="tl-card">
+          <div class="tl-head">
+            <h3>Bibliotecas internas y paquetes</h3>
+            <span class="tl-tag">Lumen · GitHub Packages</span>
+          </div>
+          <p>
+            Diseño de <strong>Lumen</strong>, la biblioteca base del ecosistema: scoreboards, tablist, bossbars,
+            holograms, framework de comandos, placeholders, menús, utilidades de packet (ProtocolLib) y soporte
+            opcional de MongoDB y Redis. Publicada en GitHub Packages con versiones inmutables y pipeline de
+            publicación por tags.
+          </p>
+          <div class="chips"><span>Kotlin</span><span>Gradle</span><span>GitHub Packages</span><span>CI/CD</span></div>
+        </div>
+      </article>
+
+      <article class="tl-item reveal">
+        <div class="tl-marker"><span></span></div>
+        <div class="tl-card">
+          <div class="tl-head">
+            <h3>Infraestructura, datos &amp; cloud</h3>
+            <span class="tl-tag">Azure · AWS</span>
+          </div>
+          <p>
+            Despliegue y operación de servidores y servicios en <strong>Microsoft Azure</strong> y
+            <strong>AWS</strong>: máquinas y contenedores, balanceo, dominios y certificados, backups y
+            monitorización. Persistencia con <strong>MongoDB</strong>, <strong>Redis</strong>,
+            <strong>PostgreSQL</strong> y <strong>MySQL</strong>, y automatización con <strong>Python</strong>.
+          </p>
+          <div class="chips"><span>Azure</span><span>AWS</span><span>Docker</span><span>Linux</span><span>MongoDB</span><span>Redis</span><span>PostgreSQL</span><span>MySQL</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STACK ============ -->
+<section class="section" id="stack">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="sec-num">03</span>
+      <h2 class="sec-title"><span class="t-prompt">./</span>stack</h2>
+      <p class="sec-sub">Lenguajes, bases de datos y nubes</p>
+    </div>
+
+    <div class="stack-grid">
+      <div class="stack-col reveal">
+        <h3 class="stack-title"><span class="stack-ico">&lt;/&gt;</span> Lenguajes</h3>
+        <ul class="skill-list">
+          <li><span class="s-name">Java</span><span class="s-bar"><i style="--w:95%"></i></span><span class="s-lvl">95%</span></li>
+          <li><span class="s-name">Kotlin</span><span class="s-bar"><i style="--w:85%"></i></span><span class="s-lvl">85%</span></li>
+          <li><span class="s-name">Python</span><span class="s-bar"><i style="--w:80%"></i></span><span class="s-lvl">80%</span></li>
+          <li><span class="s-name">C#</span><span class="s-bar"><i style="--w:70%"></i></span><span class="s-lvl">70%</span></li>
+        </ul>
+        <div class="stack-badges">
+          <span class="badge b-java">Java</span>
+          <span class="badge b-kotlin">Kotlin</span>
+          <span class="badge b-python">Python</span>
+          <span class="badge b-csharp">C#</span>
+        </div>
+      </div>
+
+      <div class="stack-col reveal">
+        <h3 class="stack-title"><span class="stack-ico">⛁</span> Bases de datos</h3>
+        <ul class="skill-list">
+          <li><span class="s-name">MongoDB</span><span class="s-bar"><i style="--w:90%"></i></span><span class="s-lvl">90%</span></li>
+          <li><span class="s-name">Redis</span><span class="s-bar"><i style="--w:88%"></i></span><span class="s-lvl">88%</span></li>
+          <li><span class="s-name">PostgreSQL</span><span class="s-bar"><i style="--w:75%"></i></span><span class="s-lvl">75%</span></li>
+          <li><span class="s-name">MySQL</span><span class="s-bar"><i style="--w:78%"></i></span><span class="s-lvl">78%</span></li>
+        </ul>
+        <div class="stack-badges">
+          <span class="badge b-mongo">MongoDB</span>
+          <span class="badge b-redis">Redis</span>
+          <span class="badge b-pg">PostgreSQL</span>
+          <span class="badge b-mysql">MySQL</span>
+        </div>
+      </div>
+
+      <div class="stack-col reveal">
+        <h3 class="stack-title"><span class="stack-ico">☁</span> Nubes &amp; DevOps</h3>
+        <ul class="skill-list">
+          <li><span class="s-name">Microsoft Azure</span><span class="s-bar"><i style="--w:85%"></i></span><span class="s-lvl">85%</span></li>
+          <li><span class="s-name">Amazon AWS</span><span class="s-bar"><i style="--w:80%"></i></span><span class="s-lvl">80%</span></li>
+        </ul>
+        <div class="stack-badges">
+          <span class="badge b-azure">Azure</span>
+          <span class="badge b-aws">AWS</span>
+          <span class="badge b-docker">Docker</span>
+          <span class="badge b-linux">Linux</span>
+          <span class="badge b-git">Git</span>
+          <span class="badge b-actions">Actions</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="toolbox reveal">
+      <span class="toolbox-label">También manejo:</span>
+      <span>ProtocolLib</span><span>Vault</span><span>PlaceholderAPI</span><span>ViaVersion</span>
+      <span>Gradle</span><span>Maven</span><span>Git</span><span>GitHub Actions</span><span>GitHub Packages</span>
+      <span>Netty</span><span>Docker</span><span>Nginx</span><span>Systemd</span><span>REST APIs</span><span>Webhooks</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROYECTOS ============ -->
+<section class="section section-alt" id="proyectos">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="sec-num">04</span>
+      <h2 class="sec-title"><span class="t-prompt">./</span>proyectos</h2>
+      <p class="sec-sub">Plugins, librerías y herramientas que he construido y mantenido</p>
+    </div>
+
+    <div class="filter-bar reveal" id="filterBar">
+      <button class="chip-btn active" data-filter="all">Todos</button>
+      <button class="chip-btn" data-filter="plugin">Plugins</button>
+      <button class="chip-btn" data-filter="library">Librerías</button>
+      <button class="chip-btn" data-filter="security">Seguridad</button>
+      <button class="chip-btn" data-filter="core">Cores</button>
+    </div>
+
+    <div class="projects-grid">
+
+      <article class="proj reveal" data-cat="security" data-tags="Pipeline">
+        <div class="proj-shot">
+          <img src="assets/img/project-pipeline-1.png" alt="Panel web de Pipeline AntiExploits" loading="lazy">
+          <span class="proj-badge">Java</span>
+        </div>
+        <div class="proj-body">
+          <h3>Pipeline <span class="pmuted">AntiExploits</span></h3>
+          <p>Protección a nivel de paquete para Paper/Spigot: hook de Netty por reflexión, límites de PPS y por tipo de paquete, sistema de Violation Level con decaimiento, guardas de payload sobredimensionado y panel web embebido con logs por jugador.</p>
+          <div class="chips small"><span>Java 17</span><span>Netty</span><span>Reflection</span><span>Paper API</span></div>
+          <div class="proj-foot">
+            <span class="proj-private"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg> repo privado</span>
+            <span class="proj-repo">Centry-Org/Pipeline-AntiExploits</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj reveal" data-cat="plugin" data-tags="CobaltSpigot">
+        <div class="proj-shot">
+          <img src="assets/img/project-cobalt-spigot.png" alt="CobaltSpigot en ejecución" loading="lazy">
+          <span class="proj-badge">Java</span>
+        </div>
+        <div class="proj-body">
+          <h3>CobaltSpigot</h3>
+          <p>Servidor Spigot completo (API + core) construido sobre Maven, con sistemas de red, comandos y módulos propios. Mantenimiento activo y publicación de compilaciones para distintos escenarios de servidor.</p>
+          <div class="chips small"><span>Java</span><span>Maven</span><span>Spigot</span><span>Multi-módulo</span></div>
+          <div class="proj-foot">
+            <span class="proj-private"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg> repo privado</span>
+            <span class="proj-repo">Centry-Org/CobaltSpigot</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj reveal" data-cat="library" data-tags="Lumen">
+        <div class="proj-shot">
+          <img src="assets/img/project-cobalt-spigot-2.png" alt="Lumen, biblioteca base para plugins Spigot" loading="lazy">
+          <span class="proj-badge">Kotlin</span>
+        </div>
+        <div class="proj-body">
+          <h3>Lumen <span class="pmuted">library</span></h3>
+          <p>Biblioteca liviana para Spigot 1.8.8 que se shadea dentro de otros plugins: scoreboards, tablist, bossbars, hologramas, framework de comandos, placeholders, menús, utilidades de packet (ProtocolLib) y soporte opcional de MongoDB y Redis. Publicada en GitHub Packages.</p>
+          <div class="chips small"><span>Kotlin</span><span>Gradle</span><span>ProtocolLib</span><span>GitHub Packages</span></div>
+          <div class="proj-foot">
+            <span class="proj-private"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg> repo privado</span>
+            <span class="proj-repo">Centry-Org/Lumen</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj reveal" data-cat="core" data-tags="Morgan">
+        <div class="proj-shot">
+          <img src="assets/img/gallery-05.png" alt="Sistema de ranks y permisos" loading="lazy">
+          <span class="proj-badge">Kotlin</span>
+        </div>
+        <div class="proj-body">
+          <h3>Morgan <span class="pmuted">rank core</span></h3>
+          <p>Core de ranks rápido y compatible con todas las versiones: sistema de rangos, amigos, castigos, chat de staff, prefijos, sistema de parties, webhooks de punishment y conversión de ranks desde otros cores.</p>
+          <div class="chips small"><span>Kotlin</span><span>Gradle</span><span>Webhooks</span><span>Multiversión</span></div>
+          <div class="proj-foot">
+            <span class="proj-private"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg> repo privado</span>
+            <span class="proj-repo">Centry-Org/Morgan</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj reveal" data-cat="plugin" data-tags="Nobody">
+        <div class="proj-shot">
+          <img src="assets/img/gallery-04.png" alt="Plugin Nobody con ProtocolLib" loading="lazy">
+          <span class="proj-badge">Kotlin</span>
+        </div>
+        <div class="proj-body">
+          <h3>Nobody</h3>
+          <p>Plugin de entidades NPC para 1.8.8 y superior, portado con ProtocolLib: nombres flotantes, hitboxes, estados de interacción y comportamiento configurable, integrado con el framework de menús.</p>
+          <div class="chips small"><span>Kotlin</span><span>ProtocolLib</span><span>1.8.8+</span><span>NPC</span></div>
+          <div class="proj-foot">
+            <span class="proj-private"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg> repo privado</span>
+            <span class="proj-repo">Centry-Org/Nobody</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj reveal" data-cat="core" data-tags="HubCore">
+        <div class="proj-shot">
+          <img src="assets/img/gallery-06.png" alt="Hub core construido con Lumen y Morgan" loading="lazy">
+          <span class="proj-badge">Kotlin</span>
+        </div>
+        <div class="proj-body">
+          <h3>Hub Core</h3>
+          <p>Core de servidor hub construido sobre Lumen y Morgan: scoreboard y tablist por defecto, sistema de ranks integrado, gestión de menús, teletransportes y minions, con soporte de PlaceholderAPI y ProtocolLib.</p>
+          <div class="chips small"><span>Kotlin</span><span>Lumen</span><span>Morgan</span><span>PlaceholderAPI</span></div>
+          <div class="proj-foot">
+            <span class="proj-private"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg> repo privado</span>
+            <span class="proj-repo">Centry-Org/HubCore</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj reveal" data-cat="plugin" data-tags="Moon">
+        <div class="proj-shot">
+          <img src="assets/img/gallery-07.png" alt="Plugin de crates mensuales Moon" loading="lazy">
+          <span class="proj-badge">Kotlin</span>
+        </div>
+        <div class="proj-body">
+          <h3>Moon <span class="pmuted">monthly crates</span></h3>
+          <p>Plugin de crates mensuales construido sobre Lumen, con previews, animaciones, cooldowns por jugador y persistencia de Ventas y recompensas claims.</p>
+          <div class="chips small"><span>Kotlin</span><span>Lumen</span><span>Guards</span><span>Persistencia</span></div>
+          <div class="proj-foot">
+            <span class="proj-private"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg> repo privado</span>
+            <span class="proj-repo">Centry-Org/Moon</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj reveal" data-cat="plugin" data-tags="HCF">
+        <div class="proj-shot">
+          <img src="assets/img/gallery-01.png" alt="Servidor HCF" loading="lazy">
+          <span class="proj-badge">Java</span>
+        </div>
+        <div class="proj-body">
+          <h3>HCF <span class="pmuted">Lazarus</span></h3>
+          <p>Servidor HCF completo: gestión de bandas, guerra, claims, ecommerce interno, roles y permisos de jugadores, con integración de Morgan, Nobody, Vault y ShopGUIPlus.</p>
+          <div class="chips small"><span>Java</span><span>Spigot</span><span>Vault</span><span>ShopGUIPlus</span></div>
+          <div class="proj-foot">
+            <a class="proj-link" href="https://github.com/wbtt2/HCF" target="_blank" rel="noopener">Ver repo <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+            <span class="proj-repo">wbtt2/HCF</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALERÍA ============ -->
+<section class="section" id="galeria">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="sec-num">05</span>
+      <h2 class="sec-title"><span class="t-prompt">./</span>galería</h2>
+      <p class="sec-sub">Capturas de plugins, servidores y paneles — haz clic para ampliar</p>
+    </div>
+
+    <div class="gallery">
+      <figure class="g-item g-wide reveal">
+        <img src="assets/img/gallery-05.png" alt="Captura de un plugin en ejecución" loading="lazy" data-full="assets/img/gallery-05.png">
+        <figcaption>Plugin en producción</figcaption>
+      </figure>
+      <figure class="g-item reveal">
+        <img src="assets/img/gallery-02.png" alt="Interfaz de un plugin" loading="lazy" data-full="assets/img/gallery-02.png">
+        <figcaption>Interfaz y configuraciones</figcaption>
+      </figure>
+      <figure class="g-item reveal">
+        <img src="assets/img/gallery-03.png" alt="Detalle de un plugin" loading="lazy" data-full="assets/img/gallery-03.png">
+        <figcaption>Detalle de comando</figcaption>
+      </figure>
+      <figure class="g-item g-wide reveal">
+        <img src="assets/img/gallery-04.png" alt="Sistema de entidades y NPCs" loading="lazy" data-full="assets/img/gallery-04.png">
+        <figcaption>Entidades y NPCs</figcaption>
+      </figure>
+      <figure class="g-item reveal">
+        <img src="assets/img/gallery-06.png" alt="Hub core" loading="lazy" data-full="assets/img/gallery-06.png">
+        <figcaption>Hub core</figcaption>
+      </figure>
+      <figure class="g-item reveal">
+        <img src="assets/img/gallery-07.png" alt="Crates mensuales" loading="lazy" data-full="assets/img/gallery-07.png">
+        <figcaption>Crates mensuales</figcaption>
+      </figure>
+      <figure class="g-item g-wide reveal">
+        <img src="assets/img/gallery-01.png" alt="Servidor HCF" loading="lazy" data-full="assets/img/gallery-01.png">
+        <figcaption>Servidor HCF</figcaption>
+      </figure>
+      <figure class="g-item reveal">
+        <img src="assets/img/project-pipeline-1.png" alt="Panel web de Pipeline" loading="lazy" data-full="assets/img/project-pipeline-1.png">
+        <figcaption>Pipeline · panel web</figcaption>
+      </figure>
+      <figure class="g-item reveal">
+        <img src="assets/img/project-pipeline-2.png" alt="Logs de packets" loading="lazy" data-full="assets/img/project-pipeline-2.png">
+        <figcaption>Pipeline · logs de packets</figcaption>
+      </figure>
+      <figure class="g-item g-wide reveal">
+        <img src="assets/img/project-cobalt-spigot.png" alt="CobaltSpigot" loading="lazy" data-full="assets/img/project-cobalt-spigot.png">
+        <figcaption>CobaltSpigot</figcaption>
+      </figure>
+      <figure class="g-item reveal">
+        <img src="assets/img/project-cobalt-spigot-2.png" alt="CobaltSpigot en servidor" loading="lazy" data-full="assets/img/project-cobalt-spigot-2.png">
+        <figcaption>CobaltSpigot · servidor</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CÓDIGO ============ -->
+<section class="section section-alt" id="codigo">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="sec-num">06</span>
+      <h2 class="sec-title"><span class="t-prompt">./</span>código</h2>
+      <p class="sec-sub">Fragmentos reales de mis plugins</p>
+    </div>
+
+    <div class="code-window reveal">
+      <div class="code-tabs" id="codeTabs">
+        <button class="code-tab active" data-tab="tab-java">PacketLimiter.java</button>
+        <button class="code-tab" data-tab="tab-kotlin">Lumen · Kotlin</button>
+        <button class="code-tab" data-tab="tab-python">Tooling · Python</button>
+        <button class="code-tab" data-tab="tab-sql">MongoDB</button>
+      </div>
+
+      <div class="code-pane active" id="tab-java">
+        <pre><code><span class="c-key">public</span> <span class="c-type">Verdict</span> <span class="c-fn">check</span>(<span class="c-type">UUID</span> playerId, <span class="c-type">Object</span> packet) {
+    <span class="c-type">State</span> state = states.<span class="c-fn">computeIfAbsent</span>(playerId, id <span class="c-op">-&gt;</span> <span class="c-key">new</span> <span class="c-type">State</span>());
+    <span class="c-key">long</span> second = System.<span class="c-fn">currentTimeMillis</span>() <span class="c-op">/</span> 1000L;
+
+    <span class="c-key">synchronized</span> (state) {
+        <span class="c-key">if</span> (second <span class="c-op">!=</span> state.windowSecond) {
+            state.windowSecond = second;
+            state.packetsInSecond = 0;
+            state.packetsInSecondTotal = 0;
+            state.perType.<span class="c-fn">clear</span>();
+        }
+
+        state.packetsInSecondTotal++;
+
+        <span class="c-type">Integer</span> typeLimit = <span class="c-fn">limitFor</span>(packetName);
+        <span class="c-key">if</span> (typeLimit <span class="c-op">!=</span> <span class="c-key">null</span>) {
+            <span class="c-key">int</span> count = state.perType.<span class="c-fn">merge</span>(packetName, 1, Integer::<span class="c-op">sum</span>);
+            <span class="c-key">if</span> (count <span class="c-op">&gt;</span> typeLimit) {
+                <span class="c-fn">flag</span>(playerId, state, packetName + <span class="c-str">" over per-type limit ("</span>
+                        + count + <span class="c-str">"/"</span> + typeLimit + <span class="c-str">")"</span>);
+                <span class="c-key">return</span> observeMode ? Verdict.ALLOW : Verdict.DROP;
+            }
+        }
+
+        <span class="c-key">if</span> (maxPps <span class="c-op">&gt;</span> 0) {
+            state.packetsInSecond++;
+            <span class="c-key">if</span> (state.packetsInSecond <span class="c-op">&gt;</span> maxPps) {
+                <span class="c-key">if</span> (dropOverLimit <span class="c-op">&amp;&amp;</span> <span class="c-op">!</span>observeMode) {
+                    <span class="c-key">return</span> <span class="c-fn">decideKick</span>(state);
+                }
+            }
+        }
+    }
+    <span class="c-key">return</span> Verdict.ALLOW;
+}</code></pre>
+      </div>
+
+      <div class="code-pane" id="tab-kotlin">
+        <pre><code><span class="c-key">object</span> <span class="c-type">MongoStorage</span> {
+
+    <span class="c-key">private val</span> client = MongoClients.<span class="c-fn">create</span>(Settings.builder()
+        .<span class="c-fn">applyConnectionString</span>(<span class="c-fn">config</span>(<span class="c-str">"mongo.uri"</span>))
+        .<span class="c-fn">build</span>())
+
+    <span class="c-key">private val</span> database = client.<span class="c-fn">getDatabase</span>(<span class="c-fn">config</span>(<span class="c-str">"mongo.database"</span>))
+
+    <span class="c-key">fun</span> <span class="c-type">loadPlayer</span>(uuid: <span class="c-type">UUID</span>): <span class="c-type">PlayerData</span>? =
+        database.<span class="c-fn">getCollection</span>&lt;<span class="c-type">PlayerData</span>&gt;(<span class="c-str">"players"</span>)
+            .<span class="c-fn">find</span>(Filters.<span class="c-fn">eq</span>(<span class="c-str">"_id"</span>, uuid.<span class="c-fn">toString</span>()))
+            .<span class="c-fn">first</span>()
+            ?.<span class="c-fn">let</span> { <span class="c-fn">decode</span>&lt;<span class="c-type">PlayerData</span>&gt;(it) }
+
+    <span class="c-key">fun</span> <span class="c-type">savePlayer</span>(data: <span class="c-type">PlayerData</span>) {
+        database.<span class="c-fn">getCollection</span>&lt;<span class="c-type">PlayerData</span>&gt;(<span class="c-str">"players"</span>)
+            .<span class="c-fn">replaceOne</span>(
+                Filters.<span class="c-fn">eq</span>(<span class="c-str">"_id"</span>, data.uuid.<span class="c-fn">toString</span>()),
+                data,
+                <span class="c-type">ReplaceOptions</span>().<span class="c-fn">upsert</span>(<span class="c-key">true</span>)
+            )
+    }
+}</code></pre>
+      </div>
+
+      <div class="code-pane" id="tab-python">
+        <pre><code><span class="c-key">import</span> subprocess
+<span class="c-key">from</span> pathlib <span class="c-key">import</span> Path
+
+<span class="c-key">def</span> <span class="c-fn">build</span>(project: <span class="c-type">str</span>, version: <span class="c-type">str</span>) <span class="c-op">-&gt;</span> <span class="c-type">Path</span>:
+    <span class="c-str">"""Compila el plugin y deja el JAR en target/."""</span>
+    root = Path(<span class="c-str">"C:/repos"</span>) / project
+    result = subprocess.<span class="c-fn">run</span>(
+        [<span class="c-str">"mvn"</span>, <span class="c-str">"-q"</span>, <span class="c-str">"clean"</span>, <span class="c-str">"package"</span>],
+        cwd=root, capture_output=<span class="c-key">True</span>, text=<span class="c-key">True</span>
+    )
+    <span class="c-key">if</span> result.returncode <span class="c-op">!=</span> 0:
+        <span class="c-key">raise</span> <span class="c-type">RuntimeError</span>(result.stderr[-2000:])
+
+    jars = <span class="c-fn">sorted</span>((root / <span class="c-str">"target"</span>).<span class="c-fn">glob</span>(<span class="c-str">"*.jar"</span>),
+                   key=<span class="c-key">lambda</span> p: p.stat().st_mtime)
+    <span class="c-key">return</span> jars[-1]
+
+
+<span class="c-key">def</span> <span class="c-fn">deploy</span>(jar: <span class="c-type">Path</span>, server: <span class="c-type">str</span>) <span class="c-op">-&gt;</span> <span class="c-key">None</span>:
+    <span class="c-str">"""Sube el JAR al servidor y lo reinicia de forma segura."""</span>
+    plugins = <span class="c-type">Path</span>(server) / <span class="c-str">"plugins"</span>
+    plugins.<span class="c-fn">mkdir</span>(parents=<span class="c-key">True</span>, exist_ok=<span class="c-key">True</span>)
+    shutil.<span class="c-fn">copy2</span>(jar, plugins / jar.name)
+    subprocess.<span class="c-fn">run</span>([<span class="c-str">"systemctl"</span>, <span class="c-str">"restart"</span>, server], check=<span class="c-key">True</span>)</code></pre>
+      </div>
+
+      <div class="code-pane" id="tab-sql">
+        <pre><code><span class="c-cmt">-- Pipeline · persistencia de Violation Level y eventos</span>
+<span class="c-key">CREATE TABLE</span> <span class="c-key">IF NOT EXISTS</span> player_violations (
+    player_uuid   <span class="c-type">UUID</span>        <span class="c-key">NOT NULL</span>,
+    violation_lvl <span class="c-type">INTEGER</span>     <span class="c-key">NOT NULL</span> <span class="c-key">DEFAULT</span> 0,
+    packet_count  <span class="c-type">BIGINT</span>      <span class="c-key">NOT NULL</span> <span class="c-key">DEFAULT</span> 0,
+    last_alert_at <span class="c-type">TIMESTAMPTZ</span>,
+    <span class="c-key">PRIMARY KEY</span> (player_uuid)
+);
+
+<span class="c-key">CREATE INDEX</span> <span class="c-key">IF NOT EXISTS</span> idx_violations_lvl
+    <span class="c-key">ON</span> player_violations (violation_lvl <span class="c-key">DESC</span>);
+
+<span class="c-cmt">-- Cache de datos en Redis + histórico de eventos en PostgreSQL</span>
+<span class="c-key">SELECT</span> p.uuid, p.name, <span class="c-fn">COALESCE</span>(v.violation_lvl, 0) <span class="c-key">AS</span> vl
+<span class="c-key">FROM</span> players p
+<span class="c-key">LEFT JOIN</span> player_violations v <span class="c-key">ON</span> v.player_uuid = p.uuid
+<span class="c-key">WHERE</span> p.last_seen <span class="c-op">&gt;</span> <span class="c-fn">NOW</span>() <span class="c-op">-</span> <span class="c-key">INTERVAL</span> <span class="c-str">'30 days'</span>
+<span class="c-key">ORDER BY</span> vl <span class="c-key">DESC</span>
+<span class="c-key">LIMIT</span> 50;</code></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACTO ============ -->
+<section class="section" id="contacto">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="sec-num">07</span>
+      <h2 class="sec-title"><span class="t-prompt">./</span>contacto</h2>
+      <p class="sec-sub">¿Necesitas un plugin a medida o mantenimiento del que ya tienes?</p>
+    </div>
+
+    <div class="contact-grid">
+      <a class="c-card reveal" href="https://github.com/wbtt2" target="_blank" rel="noopener">
+        <span class="c-ico">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 1.7 2.6 1.2 3.3.9.1-.7.4-1.2.7-1.5-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C17.3 4.7 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .4.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5Z"/></svg>
+        </span>
+        <span class="c-body">
+          <b>GitHub</b>
+          <span>@wbtt2</span>
+        </span>
+        <span class="c-go">→</span>
+      </a>
+
+      <a class="c-card reveal" href="https://github.com/Centry-Org" target="_blank" rel="noopener">
+        <span class="c-ico">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg>
+        </span>
+        <span class="c-body">
+          <b>Organización</b>
+          <span>Centry-Org</span>
+        </span>
+        <span class="c-go">→</span>
+      </a>
+
+      <div class="c-card reveal" href="#" data-copy="wbbtt">
+        <span class="c-ico">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg>
+        </span>
+        <span class="c-body">
+          <b>Discord</b>
+          <span id="discord-handle">@wbbtt</span>
+        </span>
+        <span class="c-go copy-hint" id="copyHint">copiar</span>
+      </div>
+
+      <div class="c-card reveal" href="#" data-copy="francisco.soportes@gmail.com">
+        <span class="c-ico">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        </span>
+        <span class="c-body">
+          <b>Email</b>
+          <span id="email-text">francisco.soportes@gmail.com</span>
+        </span>
+        <span class="c-go copy-hint" id="copyHint2">copiar</span>
+      </div>
+    </div>
+
+    <div class="cta reveal">
+      <p class="cta-line"><span class="t-prompt">$</span> ./contacto.sh --nuevo-proyecto</p>
+      <p class="cta-sub">Disponible para plugins a medida, mantenimiento de plugins existentes y soporte de servidores.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container foot-inner">
+    <div class="foot-left">
+      <span class="foot-prompt">&gt;</span> <span id="year">2026</span> — <strong>Francisco (@wbt)</strong> · Centry Organizations
+    </div>
+    <div class="foot-right">
+      <a href="https://github.com/wbtt2" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://github.com/Centry-Org" target="_blank" rel="noopener">Centry-Org</a>
+      <a href="#hero" class="to-top">↑ arriba</a>
+    </div>
+  </div>
+  <div class="foot-bg" aria-hidden="true">wbt</div>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+  <button class="lb-close" id="lbClose" aria-label="Cerrar">✕</button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Anterior">‹</button>
+  <figure class="lb-figure">
+    <img id="lbImage" src="" alt="">
+    <figcaption id="lbCaption"></figcaption>
+  </figure>
+  <button class="lb-nav lb-next" id="lbNext" aria-label="Siguiente">›</button>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

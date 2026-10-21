@@ -1,0 +1,27 @@
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+*.swp
+
+# Node / tooling
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Java / Gradle / Maven
+target/
+build/
+*.class
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+
+# Credenciales
+.env
+.env.*
+*.pem
+gradle.properties
