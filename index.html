@@ -3,492 +3,368 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Francisco · wbt — Desarrollador de plugins Minecraft (Spigot/Paper)</title>
-<meta name="description" content="Portafolio de Francisco (wbt / @wbtt2): mantenimiento y desarrollo de plugins para Minecraft (Spigot, Paper) en Java, Kotlin, Python y C#. MongoDB, Redis, PostgreSQL, MySQL. Azure y AWS.">
+<title>wbt — Francisco · Plugin developer (Spigot/Paper)</title>
+<meta name="description" content="Francisco (@wbtt2): mantenimiento y desarrollo de plugins para Minecraft en Java, Kotlin, Python y C#. MongoDB, Redis, PostgreSQL, MySQL. Azure y AWS.">
 <meta name="author" content="wbt">
-<meta name="theme-color" content="#0a0e14">
-
-<meta property="og:type" content="website">
-<meta property="og:title" content="Francisco · wbt — Portafolio">
-<meta property="og:description" content="Desarrollador de plugins para Minecraft (Spigot/Paper). Java, Kotlin, Python, C#. MongoDB, Redis, PostgreSQL, MySQL. Azure y AWS.">
-<meta property="og:image" content="https://wbtt2.github.io/assets/img/project-cobalt-spigot.png">
-<meta name="twitter:card" content="summary_large_image">
-
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%98%84%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#13141c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%3E_%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-<div class="bg-grid" aria-hidden="true"></div>
-<div class="bg-glow" aria-hidden="true"></div>
-
-<div class="cursor-dot" aria-hidden="true"></div>
-<div class="cursor-ring" aria-hidden="true"></div>
-
-<!-- ============ NAV ============ -->
-<header class="nav" id="nav">
-  <div class="nav-inner">
-    <a href="#hero" class="brand">
-      <span class="brand-prompt">&gt;</span><span class="brand-name">wbt</span><span class="brand-cursor">_</span>
-    </a>
-    <nav class="nav-links" id="navLinks" aria-label="Principal">
-      <a href="#perfil">Perfil</a>
-      <a href="#experiencia">Experiencia</a>
-      <a href="#stack">Stack</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#galeria">Galería</a>
-      <a href="#codigo">Código</a>
-      <a href="#contacto">Contacto</a>
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="tb-brand" href="#top"><span class="c-g">&gt;</span><span class="c-b">wbt</span></a>
+    <nav class="tb-nav" id="nav">
+      <a href="#perfil">perfil</a>
+      <a href="#experiencia">experiencia</a>
+      <a href="#stack">stack</a>
+      <a href="#proyectos">proyectos</a>
+      <a href="#galeria">galería</a>
+      <a href="#codigo">código</a>
+      <a href="#contacto">contacto</a>
     </nav>
-    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="tb-btn" id="navBtn" aria-expanded="false" aria-controls="nav">menú</button>
   </div>
-  <div class="nav-progress"><span id="navProgress"></span></div>
 </header>
 
-<main>
+<main id="top">
 
 <!-- ============ HERO ============ -->
-<section class="hero" id="hero">
-  <div class="container hero-grid">
-    <div class="hero-text">
-      <p class="hero-eyebrow reveal"><span class="dot"></span> disponible para proyectos &amp; mantenimiento</p>
-      <h1 class="reveal">
-        Hola, soy <span class="grad">Francisco</span><br>
-        <span class="hero-role">desarrollador de plugins</span>
-      </h1>
-      <p class="hero-sub reveal">
-        Mantengo y construyo plugins para servidores de <strong>Minecraft</strong> (Spigot, Paper y forks).
-        Me especializo en <span class="hl">Java</span>, <span class="hl">Kotlin</span>,
-        <span class="hl">Python</span> y <span class="hl">C#</span>, con datos en
-        <span class="hl">MongoDB</span>, <span class="hl">Redis</span>, <span class="hl">PostgreSQL</span> y
-        <span class="hl">MySQL</span>, desplegados en <span class="hl">Azure</span> y <span class="hl">AWS</span>.
+<section class="hero">
+  <div class="wrap hero-in">
+    <div class="hero-l">
+      <p class="path">wbt.github.io <span class="sep">/</span> <span class="c-d">index.md</span></p>
+      <h1>Francisco<span class="c-g">.</span></h1>
+      <p class="role">plugin developer <span class="c-d">—</span> Spigot · Paper · Folia</p>
+      <p class="lede">
+        Mantengo plugins en producción y los escribo desde cero para servidores que los necesitan.
+        Java y Kotlin sobre la API de Bukkit, con <span class="c-b">ProtocolLib</span> cuando el paquete
+        no basta. Multi-versión desde 1.8.8.
       </p>
-
-      <div class="hero-actions reveal">
-        <a href="#proyectos" class="btn btn-primary">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
-          Ver proyectos
-        </a>
-        <a href="https://github.com/wbtt2" class="btn btn-ghost" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 1.7 2.6 1.2 3.3.9.1-.7.4-1.2.7-1.5-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C17.3 4.7 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .4.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5Z"/></svg>
-          GitHub
-        </a>
-      </div>
-
-      <div class="hero-stats reveal">
-        <div class="stat"><b data-count="8">0</b><span>proyectos</span></div>
-        <div class="stat"><b data-count="5">0</b><span>lenguajes</span></div>
-        <div class="stat"><b data-count="4">0</b><span>motores DB</span></div>
-        <div class="stat"><b data-count="2">0</b><span>clouds</span></div>
+      <div class="hero-links">
+        <a href="#proyectos">proyectos <span class="c-d">→</span></a>
+        <a href="#codigo">código <span class="c-d">→</span></a>
+        <a href="https://github.com/wbtt2" target="_blank" rel="noopener">github <span class="c-d">↗</span></a>
       </div>
     </div>
 
-    <div class="hero-visual reveal">
-      <div class="avatar-wrap">
-        <div class="avatar-ring"></div>
-        <img class="avatar" src="assets/img/avatar.png" alt="Foto de perfil de Francisco (@wbtt2)" width="400" height="400">
-        <div class="avatar-tag"><span class="dot"></span> wbt</div>
-      </div>
-      <div class="terminal" id="terminal">
-        <div class="term-bar">
-          <span class="term-dot r"></span><span class="term-dot y"></span><span class="term-dot g"></span>
-          <span class="term-title">wbt@centry:~</span>
+    <div class="hero-r">
+      <div class="spec">
+        <div class="spec-hd">
+          <img src="assets/img/avatar.png" alt="Foto de perfil de Francisco" width="72" height="72">
+          <div>
+            <b>francisco</b>
+            <span>@wbtt2</span>
+          </div>
         </div>
-        <div class="term-body" id="termBody">
-          <p><span class="t-prompt">wbt@centry</span>:<span class="t-path">~</span>$ whoami</p>
-          <p class="t-out">Francisco — <span class="t-accent">wbt</span> · Minecraft Plugin Developer</p>
-          <p><span class="t-prompt">wbt@centry</span>:<span class="t-path">~</span>$ cat stack.txt</p>
-          <p class="t-out">Java · Kotlin · Python · C#</p>
-          <p class="t-out">MongoDB · Redis · PostgreSQL · MySQL</p>
-          <p class="t-out">Azure · AWS</p>
-          <p><span class="t-prompt">wbt@centry</span>:<span class="t-path">~</span>$ ls ~/projects</p>
-          <p class="t-out">Pipeline-AntiExploits · CobaltSpigot · Lumen</p>
-          <p class="t-out">Morgan · Nobody · HubCore · Moon</p>
-          <p><span class="t-prompt">wbt@centry</span>:<span class="t-path">~</span>$ <span class="t-cursor"></span></p>
-        </div>
+        <dl class="spec-dl">
+          <dt>rol</dt><dd>maintainer / developer</dd>
+          <dt>lenguajes</dt><dd>java, kotlin, python, c#</dd>
+          <dt>datos</dt><dd>mongodb, redis, postgresql, mysql</dd>
+          <dt>nube</dt><dd>azure, aws</dd>
+          <dt>org</dt><dd>centry-org</dd>
+          <dt>discord</dt><dd>@wbbtt</dd>
+        </dl>
       </div>
     </div>
   </div>
-
-  <a href="#perfil" class="scroll-hint" aria-label="Desplazar">
-    <span></span>
-  </a>
 </section>
 
 <!-- ============ PERFIL ============ -->
-<section class="section" id="perfil">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="sec-num">01</span>
-      <h2 class="sec-title"><span class="t-prompt">./</span>perfil</h2>
-      <p class="sec-sub">Quién soy y qué hago</p>
-    </div>
-
-    <div class="about-grid">
-      <div class="about-main reveal">
+<section class="sec" id="perfil">
+  <div class="wrap">
+    <h2 class="sec-h"><span class="c-d">01</span> <span class="c-g">/</span> perfil</h2>
+    <div class="cols">
+      <div class="col-main">
         <p>
-          Soy <strong>Francisco</strong> (<span class="mono">@wbtt2</span>), detrás de <span class="mono">Centry Organizations</span>.
-          Mi trabajo consiste en <strong>dar mantenimiento a plugins y servidores Spigot/Paper</strong> y en
-          <strong>crear plugins a medida</strong> para servidores y jugadores: desde sistemas de rangos, menus y
-          scoreboards hasta anticheats a nivel de paquete y herramientas de administración.
+          Soy <b>Francisco</b> (<span class="c-b">@wbtt2</span>), detrás de <b>Centry Organizations</b>.
+          Lo que hago se reduce a dos cosas: <b>dar mantenimiento a plugins y servidores Spigot/Paper</b>
+          que ya están en producción, y <b>escribir plugins a medida</b> para servidores y usuarios finales.
         </p>
         <p>
-          Trabajo con <strong>Java</strong> y <strong>Kotlin</strong> sobre la API de Bukkit/Spigot y <strong>ProtocolLib</strong>,
-          cuidando la <strong>compatibilidad multi-versión</strong> (1.8.8 hasta 1.21) con reflexión y sin depender de
-          mapeos NMS. Cuando toca, me muevo a <strong>Python</strong> para tooling, <strong>C#</strong> para plugins de
-          Bedrock y herramientas .NET, y a la <strong>nube</strong> (<strong>Azure</strong> y <strong>AWS</strong>) para la
-          infraestructura y los pipelines de despliegue.
+          El día a día es corregir errores en caliente, adaptar plugins a versiones nuevas de Minecraft
+          y refactorizar código que lleva años sin tocarse. Nada de forkear el servidor: uso reflexión
+          y <span class="c-b">ProtocolLib</span> para que el mismo JAR funcione en 1.8.8 y en 1.21.
         </p>
         <p>
-          En el lado de datos uso <strong>MongoDB</strong> para persistencia documental, <strong>Redis</strong> para caché y
-          colas, y <strong>PostgreSQL</strong>/<strong>MySQL</strong> cuando el modelo es relacional.
+          Cuando un plugin no depende del servidor, escribo tooling en <span class="c-b">Python</span>
+          para builds y despliegues. Para Bedrock y herramientas .NET, <span class="c-b">C#</span>.
+          La infraestructura vive en <span class="c-b">Azure</span> y <span class="c-b">AWS</span>, con
+          <span class="c-b">MongoDB</span> para lo documental, <span class="c-b">Redis</span> para caché y
+          colas, y <span class="c-b">PostgreSQL</span>/<span class="c-b">MySQL</span> cuando el modelo es relacional.
         </p>
-
-        <div class="about-facts">
-          <div class="fact"><span class="fact-k">Nombre</span><span class="fact-v">Francisco (@wbtt2)</span></div>
-          <div class="fact"><span class="fact-k">Rol</span><span class="fact-v">Plugin Developer &amp; Maintainer</span></div>
-          <div class="fact"><span class="fact-k">Especialidad</span><span class="fact-v">Spigot / Paper / Folia</span></div>
-          <div class="fact"><span class="fact-k">Organización</span><span class="fact-v">Centry Organizations</span></div>
-          <div class="fact"><span class="fact-k">Discord</span><span class="fact-v">@wbbtt</span></div>
-          <div class="fact"><span class="fact-k">Ubicación</span><span class="fact-v">Remoto</span></div>
-        </div>
       </div>
-
-      <aside class="about-side reveal">
-        <div class="side-card">
-          <h3><span class="t-prompt">$</span> En una frase</h3>
-          <p>Construyo y mantengo la infraestructura de plugins que hace que un servidor de Minecraft funcione de forma estable, segura y configurable.</p>
+      <div class="col-side">
+        <div class="kv">
+          <span>nombre</span><b>Francisco (@wbtt2)</b>
+          <span>rol</span><b>Plugin Developer &amp; Maintainer</b>
+          <span>foco</span><b>Spigot / Paper / Folia</b>
+          <span>org</span><b>Centry Organizations</b>
+          <span>discord</span><b>@wbbtt</b>
+          <span>idiomas</span><b>Español, Inglés</b>
         </div>
-        <div class="side-card">
-          <h3><span class="t-prompt">$</span> Servicios</h3>
-          <ul class="tick-list">
-            <li>Mantenimiento de plugins existentes</li>
-            <li>Plugins a medida para servidores</li>
-            <li>Sistemas de ranks, friends y permisos</li>
-            <li>Anti-exploit y protección a nivel de paquete</li>
-            <li>Dashboards web y paneles de control</li>
-            <li>Despliegue en Azure / AWS y CI/CD</li>
-          </ul>
-        </div>
-      </aside>
+        <div class="side-h">servicios</div>
+        <ul class="lst">
+          <li>Mantenimiento de plugins existentes</li>
+          <li>Plugins a medida para servidores</li>
+          <li>Ranks, friends, permisos y castigos</li>
+          <li>Anti-exploit a nivel de paquete</li>
+          <li>Dashboards y paneles web</li>
+          <li>Despliegue en Azure / AWS</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- ============ EXPERIENCIA ============ -->
-<section class="section section-alt" id="experiencia">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="sec-num">02</span>
-      <h2 class="sec-title"><span class="t-prompt">./</span>experiencia</h2>
-      <p class="sec-sub">Trayectoria y foco</p>
-    </div>
-
-    <div class="timeline">
-      <article class="tl-item reveal">
-        <div class="tl-marker"><span></span></div>
-        <div class="tl-card">
-          <div class="tl-head">
-            <h3>Mantenimiento de plugins &amp; servidores Spigot/Paper</h3>
-            <span class="tl-tag">Centry Organizations</span>
-          </div>
-          <p>
-            Mantenimiento continuo de plugins en producción: corrección de errores, adaptación a nuevas
-            versiones de Minecraft, optimización de rendimiento y refactorización de código legado.
-            También el soporte directo a servidores y la resolución de incidencias en caliente.
-          </p>
-          <div class="chips"><span>Spigot</span><span>Paper</span><span>Folia</span><span>ProtocolLib</span><span>Vault</span><span>PlaceholderAPI</span></div>
+<section class="sec sec-alt" id="experiencia">
+  <div class="wrap">
+    <h2 class="sec-h"><span class="c-d">02</span> <span class="c-g">/</span> experiencia</h2>
+    <div class="log">
+      <div class="log-row">
+        <span class="log-id">a1f3c02</span>
+        <div class="log-body">
+          <b>Mantenimiento de plugins &amp; servidores Spigot/Paper</b>
+          <p>Corrección de errores en producción, adaptación a nuevas versiones, optimización y
+             refactorización de código heredado. Soporte directo a servidores y resolución de incidencias en caliente.</p>
+          <p class="tags">spigot · paper · folia · protocollib · vault · placeholderapi</p>
         </div>
-      </article>
-
-      <article class="tl-item reveal">
-        <div class="tl-marker"><span></span></div>
-        <div class="tl-card">
-          <div class="tl-head">
-            <h3>Desarrollo de plugins a medida</h3>
-            <span class="tl-tag">Freelance / Servers</span>
-          </div>
-          <p>
-            Diseño e implementación de plugins completos para servidores y usuarios finales: sistema de
-            rangos con conversión desde otros cores, sistema de amigos y聊天室 de staff, menús configurables,
-            scoreboards y tablist con placeholders, crates, hologramas, bossbars y utilidades de packet.
-          </p>
-          <div class="chips"><span>Java</span><span>Kotlin</span><span>Gradle</span><span>Maven</span><span>Shaded JARs</span></div>
+        <span class="log-tag">centry-org</span>
+      </div>
+      <div class="log-row">
+        <span class="log-id">7c92be1</span>
+        <div class="log-body">
+          <b>Plugins a medida para servidores</b>
+          <p>Sistemas de ranks con conversión desde otros cores, friends, chat de staff, castigos, menus,
+             scoreboards, tablist, crates, hologramas y bossbars. Configurables desde el servidor, no desde el código.</p>
+          <p class="tags">java · kotlin · gradle · maven · shaded jars</p>
         </div>
-      </article>
-
-      <article class="tl-item reveal">
-        <div class="tl-marker"><span></span></div>
-        <div class="tl-card">
-          <div class="tl-head">
-            <h3>Anti-exploit y seguridad a nivel de packet</h3>
-            <span class="tl-tag">Pipeline</span>
-          </div>
-          <p>
-            Construcción de <strong>Pipeline</strong>: protección a nivel de paquete para Paper/Spigot que
-            bloquea crash-packets, payloads sobredimensionados y packet-spam, con hook de Netty por reflexión
-            (sin fork y sin depender de mapeos NMS), sistema de Violation Level con decaimiento, límites por
-            tipo de paquete y panel web embebido con logs por jugador.
-          </p>
-          <div class="chips"><span>Java 17+</span><span>Netty</span><span>Reflection</span><span>httpserver</span><span>Discord Webhook</span></div>
+        <span class="log-tag">freelance</span>
+      </div>
+      <div class="log-row">
+        <span class="log-id">5e0d7a4</span>
+        <div class="log-body">
+          <b>Pipeline — anti-exploit a nivel de paquete</b>
+          <p>Hook de Netty por reflexión sobre el pipeline de cada conexión, sin fork y sin depender de
+             mapeos NMS. Límites de PPS y por tipo de paquete, Violation Level con decaimiento, guarda de
+             payload sobredimensionado y panel web embebido con los logs de cada jugador.</p>
+          <p class="tags">java 17 · netty · reflection · paper api · webhooks</p>
         </div>
-      </article>
-
-      <article class="tl-item reveal">
-        <div class="tl-marker"><span></span></div>
-        <div class="tl-card">
-          <div class="tl-head">
-            <h3>Bibliotecas internas y paquetes</h3>
-            <span class="tl-tag">Lumen · GitHub Packages</span>
-          </div>
-          <p>
-            Diseño de <strong>Lumen</strong>, la biblioteca base del ecosistema: scoreboards, tablist, bossbars,
-            holograms, framework de comandos, placeholders, menús, utilidades de packet (ProtocolLib) y soporte
-            opcional de MongoDB y Redis. Publicada en GitHub Packages con versiones inmutables y pipeline de
-            publicación por tags.
-          </p>
-          <div class="chips"><span>Kotlin</span><span>Gradle</span><span>GitHub Packages</span><span>CI/CD</span></div>
+        <span class="log-tag">pipeline</span>
+      </div>
+      <div class="log-row">
+        <span class="log-id">d28a615</span>
+        <div class="log-body">
+          <b>Lumen — biblioteca base del ecosistema</b>
+          <p>Scoreboards, tablist, bossbars, hologramas, framework de comandos con tipos de parámetro,
+             placeholders, menus, utilidades de packet y soporte opcional de MongoDB y Redis.
+             Se shadea dentro de los plugins y se publica en GitHub Packages con versiones inmutables.</p>
+          <p class="tags">kotlin · gradle · github packages · ci/cd</p>
         </div>
-      </article>
-
-      <article class="tl-item reveal">
-        <div class="tl-marker"><span></span></div>
-        <div class="tl-card">
-          <div class="tl-head">
-            <h3>Infraestructura, datos &amp; cloud</h3>
-            <span class="tl-tag">Azure · AWS</span>
-          </div>
-          <p>
-            Despliegue y operación de servidores y servicios en <strong>Microsoft Azure</strong> y
-            <strong>AWS</strong>: máquinas y contenedores, balanceo, dominios y certificados, backups y
-            monitorización. Persistencia con <strong>MongoDB</strong>, <strong>Redis</strong>,
-            <strong>PostgreSQL</strong> y <strong>MySQL</strong>, y automatización con <strong>Python</strong>.
-          </p>
-          <div class="chips"><span>Azure</span><span>AWS</span><span>Docker</span><span>Linux</span><span>MongoDB</span><span>Redis</span><span>PostgreSQL</span><span>MySQL</span></div>
+        <span class="log-tag">lumen</span>
+      </div>
+      <div class="log-row">
+        <span class="log-id">3b40f18</span>
+        <div class="log-body">
+          <b>Infraestructura, datos &amp; cloud</b>
+          <p>Máquinas, contenedores, dominios, certificados, backups y monitorización en Azure y AWS.
+             Persistencia con MongoDB, Redis, PostgreSQL y MySQL. Automatización de builds y despliegues con Python.</p>
+          <p class="tags">azure · aws · docker · linux · mongodb · redis · postgresql</p>
         </div>
-      </article>
+        <span class="log-tag">infra</span>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- ============ STACK ============ -->
-<section class="section" id="stack">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="sec-num">03</span>
-      <h2 class="sec-title"><span class="t-prompt">./</span>stack</h2>
-      <p class="sec-sub">Lenguajes, bases de datos y nubes</p>
+<section class="sec" id="stack">
+  <div class="wrap">
+    <h2 class="sec-h"><span class="c-d">03</span> <span class="c-g">/</span> stack</h2>
+
+    <div class="tbl-wrap">
+      <table class="tbl">
+        <thead>
+          <tr><th>lenguaje</th><th>nivel</th><th>dónde se usa</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Java</td><td><span class="meter"><i style="--w:95%"></i></span></td><td>Bukkit API, plugins de servidor, Pipeline</td></tr>
+          <tr><td>Kotlin</td><td><span class="meter"><i style="--w:85%"></i></span></td><td>Lumen, Morgan, Nobody, HubCore</td></tr>
+          <tr><td>Python</td><td><span class="meter"><i style="--w:80%"></i></span></td><td>Tooling, builds, scripts de despliegue</td></tr>
+          <tr><td>C#</td><td><span class="meter"><i style="--w:70%"></i></span></td><td>Bedrock, plugins .NET, herramientas</td></tr>
+        </tbody>
+      </table>
     </div>
 
-    <div class="stack-grid">
-      <div class="stack-col reveal">
-        <h3 class="stack-title"><span class="stack-ico">&lt;/&gt;</span> Lenguajes</h3>
-        <ul class="skill-list">
-          <li><span class="s-name">Java</span><span class="s-bar"><i style="--w:95%"></i></span><span class="s-lvl">95%</span></li>
-          <li><span class="s-name">Kotlin</span><span class="s-bar"><i style="--w:85%"></i></span><span class="s-lvl">85%</span></li>
-          <li><span class="s-name">Python</span><span class="s-bar"><i style="--w:80%"></i></span><span class="s-lvl">80%</span></li>
-          <li><span class="s-name">C#</span><span class="s-bar"><i style="--w:70%"></i></span><span class="s-lvl">70%</span></li>
-        </ul>
-        <div class="stack-badges">
-          <span class="badge b-java">Java</span>
-          <span class="badge b-kotlin">Kotlin</span>
-          <span class="badge b-python">Python</span>
-          <span class="badge b-csharp">C#</span>
-        </div>
-      </div>
-
-      <div class="stack-col reveal">
-        <h3 class="stack-title"><span class="stack-ico">⛁</span> Bases de datos</h3>
-        <ul class="skill-list">
-          <li><span class="s-name">MongoDB</span><span class="s-bar"><i style="--w:90%"></i></span><span class="s-lvl">90%</span></li>
-          <li><span class="s-name">Redis</span><span class="s-bar"><i style="--w:88%"></i></span><span class="s-lvl">88%</span></li>
-          <li><span class="s-name">PostgreSQL</span><span class="s-bar"><i style="--w:75%"></i></span><span class="s-lvl">75%</span></li>
-          <li><span class="s-name">MySQL</span><span class="s-bar"><i style="--w:78%"></i></span><span class="s-lvl">78%</span></li>
-        </ul>
-        <div class="stack-badges">
-          <span class="badge b-mongo">MongoDB</span>
-          <span class="badge b-redis">Redis</span>
-          <span class="badge b-pg">PostgreSQL</span>
-          <span class="badge b-mysql">MySQL</span>
-        </div>
-      </div>
-
-      <div class="stack-col reveal">
-        <h3 class="stack-title"><span class="stack-ico">☁</span> Nubes &amp; DevOps</h3>
-        <ul class="skill-list">
-          <li><span class="s-name">Microsoft Azure</span><span class="s-bar"><i style="--w:85%"></i></span><span class="s-lvl">85%</span></li>
-          <li><span class="s-name">Amazon AWS</span><span class="s-bar"><i style="--w:80%"></i></span><span class="s-lvl">80%</span></li>
-        </ul>
-        <div class="stack-badges">
-          <span class="badge b-azure">Azure</span>
-          <span class="badge b-aws">AWS</span>
-          <span class="badge b-docker">Docker</span>
-          <span class="badge b-linux">Linux</span>
-          <span class="badge b-git">Git</span>
-          <span class="badge b-actions">Actions</span>
-        </div>
-      </div>
+    <div class="tbl-wrap">
+      <table class="tbl">
+        <thead>
+          <tr><th>base de datos</th><th>nivel</th><th>dónde se usa</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>MongoDB</td><td><span class="meter"><i style="--w:90%"></i></span></td><td>Perfiles, castigos y datos documentales</td></tr>
+          <tr><td>Redis</td><td><span class="meter"><i style="--w:88%"></i></span></td><td>Caché bidireccional, colas, packet manager</td></tr>
+          <tr><td>PostgreSQL</td><td><span class="meter"><i style="--w:75%"></i></span></td><td>Historial, métricas y consultas analíticas</td></tr>
+          <tr><td>MySQL</td><td><span class="meter"><i style="--w:78%"></i></span></td><td>Schemas relacionales de plugins existentes</td></tr>
+        </tbody>
+      </table>
     </div>
 
-    <div class="toolbox reveal">
-      <span class="toolbox-label">También manejo:</span>
+    <div class="tbl-wrap">
+      <table class="tbl">
+        <thead>
+          <tr><th>nube</th><th>nivel</th><th>dónde se usa</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Microsoft Azure</td><td><span class="meter"><i style="--w:85%"></i></span></td><td>Servidores, bases de datos, CI/CD</td></tr>
+          <tr><td>Amazon AWS</td><td><span class="meter"><i style="--w:80%"></i></span></td><td>EC2, S3, RDS, despliegue de servicios</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="also">
+      <span class="also-l">también:</span>
       <span>ProtocolLib</span><span>Vault</span><span>PlaceholderAPI</span><span>ViaVersion</span>
       <span>Gradle</span><span>Maven</span><span>Git</span><span>GitHub Actions</span><span>GitHub Packages</span>
-      <span>Netty</span><span>Docker</span><span>Nginx</span><span>Systemd</span><span>REST APIs</span><span>Webhooks</span>
+      <span>Netty</span><span>Docker</span><span>Nginx</span><span>systemd</span><span>REST</span><span>Webhooks</span>
     </div>
   </div>
 </section>
 
 <!-- ============ PROYECTOS ============ -->
-<section class="section section-alt" id="proyectos">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="sec-num">04</span>
-      <h2 class="sec-title"><span class="t-prompt">./</span>proyectos</h2>
-      <p class="sec-sub">Plugins, librerías y herramientas que he construido y mantenido</p>
+<section class="sec sec-alt" id="proyectos">
+  <div class="wrap">
+    <h2 class="sec-h"><span class="c-d">04</span> <span class="c-g">/</span> proyectos</h2>
+
+    <div class="filters" id="filters">
+      <button class="fbtn on" data-f="all">todos</button>
+      <button class="fbtn" data-f="plugin">plugins</button>
+      <button class="fbtn" data-f="lib">librerías</button>
+      <button class="fbtn" data-f="sec">seguridad</button>
+      <button class="fbtn" data-f="core">cores</button>
     </div>
 
-    <div class="filter-bar reveal" id="filterBar">
-      <button class="chip-btn active" data-filter="all">Todos</button>
-      <button class="chip-btn" data-filter="plugin">Plugins</button>
-      <button class="chip-btn" data-filter="library">Librerías</button>
-      <button class="chip-btn" data-filter="security">Seguridad</button>
-      <button class="chip-btn" data-filter="core">Cores</button>
-    </div>
+    <div class="repos" id="repos">
 
-    <div class="projects-grid">
-
-      <article class="proj reveal" data-cat="security" data-tags="Pipeline">
-        <div class="proj-shot">
-          <img src="assets/img/project-pipeline-1.png" alt="Panel web de Pipeline AntiExploits" loading="lazy">
-          <span class="proj-badge">Java</span>
+      <article class="repo" data-c="sec">
+        <span class="repo-n">01</span>
+        <div class="repo-t">
+          <h3>Pipeline <span class="c-d">AntiExploits</span></h3>
+          <p>Protección a nivel de paquete para Paper/Spigot. Hook de Netty por reflexión, límites de PPS y por
+             tipo de paquete, Violation Level con decaimiento, guarda de payload sobredimensionado y panel web
+             embebido con los logs de cada jugador.</p>
+          <p class="tags">java 17 · netty · reflection · paper api</p>
         </div>
-        <div class="proj-body">
-          <h3>Pipeline <span class="pmuted">AntiExploits</span></h3>
-          <p>Protección a nivel de paquete para Paper/Spigot: hook de Netty por reflexión, límites de PPS y por tipo de paquete, sistema de Violation Level con decaimiento, guardas de payload sobredimensionado y panel web embebido con logs por jugador.</p>
-          <div class="chips small"><span>Java 17</span><span>Netty</span><span>Reflection</span><span>Paper API</span></div>
-          <div class="proj-foot">
-            <span class="proj-private"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg> repo privado</span>
-            <span class="proj-repo">Centry-Org/Pipeline-AntiExploits</span>
-          </div>
-        </div>
+        <a class="repo-thumb" href="assets/img/project-pipeline-1.png" data-lb="assets/img/project-pipeline-1.png" data-cap="Pipeline · panel web de logs">
+          <img src="assets/img/project-pipeline-1.png" alt="Pipeline AntiExploits, panel web" loading="lazy">
+        </a>
+        <div class="repo-m"><span class="lock">privado</span><span class="c-d">Centry-Org/Pipeline-AntiExploits</span></div>
       </article>
 
-      <article class="proj reveal" data-cat="plugin" data-tags="CobaltSpigot">
-        <div class="proj-shot">
-          <img src="assets/img/project-cobalt-spigot.png" alt="CobaltSpigot en ejecución" loading="lazy">
-          <span class="proj-badge">Java</span>
-        </div>
-        <div class="proj-body">
+      <article class="repo" data-c="plugin">
+        <span class="repo-n">02</span>
+        <div class="repo-t">
           <h3>CobaltSpigot</h3>
-          <p>Servidor Spigot completo (API + core) construido sobre Maven, con sistemas de red, comandos y módulos propios. Mantenimiento activo y publicación de compilaciones para distintos escenarios de servidor.</p>
-          <div class="chips small"><span>Java</span><span>Maven</span><span>Spigot</span><span>Multi-módulo</span></div>
-          <div class="proj-foot">
-            <span class="proj-private"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg> repo privado</span>
-            <span class="proj-repo">Centry-Org/CobaltSpigot</span>
-          </div>
+          <p>Servidor Spigot completo (API + core) sobre Maven, con sistemas de red, comandos y módulos propios.
+             Mantenimiento activo y publicación de compilaciones para distintos escenarios de servidor.</p>
+          <p class="tags">java · maven · spigot · multi-módulo</p>
         </div>
+        <a class="repo-thumb" href="assets/img/project-cobalt-spigot.png" data-lb="assets/img/project-cobalt-spigot.png" data-cap="CobaltSpigot en ejecución">
+          <img src="assets/img/project-cobalt-spigot.png" alt="CobaltSpigot en ejecución" loading="lazy">
+        </a>
+        <div class="repo-m"><span class="lock">privado</span><span class="c-d">Centry-Org/CobaltSpigot</span></div>
       </article>
 
-      <article class="proj reveal" data-cat="library" data-tags="Lumen">
-        <div class="proj-shot">
+      <article class="repo" data-c="lib">
+        <span class="repo-n">03</span>
+        <div class="repo-t">
+          <h3>Lumen <span class="c-d">library</span></h3>
+          <p>Biblioteca para Spigot 1.8.8 que se shadea dentro de otros plugins: scoreboards, tablist, bossbars,
+             hologramas, framework de comandos, placeholders, menus, utilidades de packet (ProtocolLib) y
+             soporte opcional de MongoDB y Redis. Publicada en GitHub Packages.</p>
+          <p class="tags">kotlin · gradle · protocollib · github packages</p>
+        </div>
+        <a class="repo-thumb" href="assets/img/project-cobalt-spigot-2.png" data-lb="assets/img/project-cobalt-spigot-2.png" data-cap="Lumen · biblioteca base">
           <img src="assets/img/project-cobalt-spigot-2.png" alt="Lumen, biblioteca base para plugins Spigot" loading="lazy">
-          <span class="proj-badge">Kotlin</span>
-        </div>
-        <div class="proj-body">
-          <h3>Lumen <span class="pmuted">library</span></h3>
-          <p>Biblioteca liviana para Spigot 1.8.8 que se shadea dentro de otros plugins: scoreboards, tablist, bossbars, hologramas, framework de comandos, placeholders, menús, utilidades de packet (ProtocolLib) y soporte opcional de MongoDB y Redis. Publicada en GitHub Packages.</p>
-          <div class="chips small"><span>Kotlin</span><span>Gradle</span><span>ProtocolLib</span><span>GitHub Packages</span></div>
-          <div class="proj-foot">
-            <span class="proj-private"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg> repo privado</span>
-            <span class="proj-repo">Centry-Org/Lumen</span>
-          </div>
-        </div>
+        </a>
+        <div class="repo-m"><span class="lock">privado</span><span class="c-d">Centry-Org/Lumen</span></div>
       </article>
 
-      <article class="proj reveal" data-cat="core" data-tags="Morgan">
-        <div class="proj-shot">
+      <article class="repo" data-c="core">
+        <span class="repo-n">04</span>
+        <div class="repo-t">
+          <h3>Morgan <span class="c-d">rank core</span></h3>
+          <p>Core de ranks compatible con todas las versiones: ranks, friends, castigos, chat de staff, prefijos,
+             parties, webhooks de punishment y conversión de ranks desde otros cores. Cache bidireccional con Redis
+             y perfiles en MongoDB.</p>
+          <p class="tags">kotlin · gradle · redis · mongodb · webhooks</p>
+        </div>
+        <a class="repo-thumb" href="assets/img/gallery-05.png" data-lb="assets/img/gallery-05.png" data-cap="Morgan · sistema de ranks">
           <img src="assets/img/gallery-05.png" alt="Sistema de ranks y permisos" loading="lazy">
-          <span class="proj-badge">Kotlin</span>
-        </div>
-        <div class="proj-body">
-          <h3>Morgan <span class="pmuted">rank core</span></h3>
-          <p>Core de ranks rápido y compatible con todas las versiones: sistema de rangos, amigos, castigos, chat de staff, prefijos, sistema de parties, webhooks de punishment y conversión de ranks desde otros cores.</p>
-          <div class="chips small"><span>Kotlin</span><span>Gradle</span><span>Webhooks</span><span>Multiversión</span></div>
-          <div class="proj-foot">
-            <span class="proj-private"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg> repo privado</span>
-            <span class="proj-repo">Centry-Org/Morgan</span>
-          </div>
-        </div>
+        </a>
+        <div class="repo-m"><span class="lock">privado</span><span class="c-d">Centry-Org/Morgan</span></div>
       </article>
 
-      <article class="proj reveal" data-cat="plugin" data-tags="Nobody">
-        <div class="proj-shot">
-          <img src="assets/img/gallery-04.png" alt="Plugin Nobody con ProtocolLib" loading="lazy">
-          <span class="proj-badge">Kotlin</span>
-        </div>
-        <div class="proj-body">
+      <article class="repo" data-c="plugin">
+        <span class="repo-n">05</span>
+        <div class="repo-t">
           <h3>Nobody</h3>
-          <p>Plugin de entidades NPC para 1.8.8 y superior, portado con ProtocolLib: nombres flotantes, hitboxes, estados de interacción y comportamiento configurable, integrado con el framework de menús.</p>
-          <div class="chips small"><span>Kotlin</span><span>ProtocolLib</span><span>1.8.8+</span><span>NPC</span></div>
-          <div class="proj-foot">
-            <span class="proj-private"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg> repo privado</span>
-            <span class="proj-repo">Centry-Org/Nobody</span>
-          </div>
+          <p>Entidades NPC y hologramas renderizadas por paquete con ProtocolLib, sobre 1.8.8 y superior:
+             hitboxes, nombres flotantes, estados de interacción y distancia de visión por jugador.
+             Incluye un framework de menus GUI con actualización tras cada click.</p>
+          <p class="tags">kotlin · java · protocollib · 1.8.8+</p>
         </div>
+        <a class="repo-thumb" href="assets/img/gallery-04.png" data-lb="assets/img/gallery-04.png" data-cap="Nobody · entidades y hologramas">
+          <img src="assets/img/gallery-04.png" alt="Sistema de entidades NPC y hologramas" loading="lazy">
+        </a>
+        <div class="repo-m"><span class="lock">privado</span><span class="c-d">Centry-Org/Nobody</span></div>
       </article>
 
-      <article class="proj reveal" data-cat="core" data-tags="HubCore">
-        <div class="proj-shot">
-          <img src="assets/img/gallery-06.png" alt="Hub core construido con Lumen y Morgan" loading="lazy">
-          <span class="proj-badge">Kotlin</span>
-        </div>
-        <div class="proj-body">
+      <article class="repo" data-c="core">
+        <span class="repo-n">06</span>
+        <div class="repo-t">
           <h3>Hub Core</h3>
-          <p>Core de servidor hub construido sobre Lumen y Morgan: scoreboard y tablist por defecto, sistema de ranks integrado, gestión de menús, teletransportes y minions, con soporte de PlaceholderAPI y ProtocolLib.</p>
-          <div class="chips small"><span>Kotlin</span><span>Lumen</span><span>Morgan</span><span>PlaceholderAPI</span></div>
-          <div class="proj-foot">
-            <span class="proj-private"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg> repo privado</span>
-            <span class="proj-repo">Centry-Org/HubCore</span>
-          </div>
+          <p>Core de hub construido sobre Lumen y Morgan: scoreboard y tablist por defecto, ranks integrados,
+             selector de servidores, teletransporte, minions y protecciones de zona. Todo configurable por YAML.</p>
+          <p class="tags">kotlin · lumen · morgan · placeholderapi</p>
         </div>
+        <a class="repo-thumb" href="assets/img/gallery-06.png" data-lb="assets/img/gallery-06.png" data-cap="Hub Core">
+          <img src="assets/img/gallery-06.png" alt="Hub core construido con Lumen y Morgan" loading="lazy">
+        </a>
+        <div class="repo-m"><span class="lock">privado</span><span class="c-d">Centry-Org/HubCore</span></div>
       </article>
 
-      <article class="proj reveal" data-cat="plugin" data-tags="Moon">
-        <div class="proj-shot">
+      <article class="repo" data-c="plugin">
+        <span class="repo-n">07</span>
+        <div class="repo-t">
+          <h3>Moon <span class="c-d">monthly crates</span></h3>
+          <p>Plugin de crates mensuales sobre Lumen, con previews, animaciones, cooldowns por jugador y
+             persistencia de ventas y recompensas reclamadas.</p>
+          <p class="tags">kotlin · lumen · persistencia</p>
+        </div>
+        <a class="repo-thumb" href="assets/img/gallery-07.png" data-lb="assets/img/gallery-07.png" data-cap="Moon · crates mensuales">
           <img src="assets/img/gallery-07.png" alt="Plugin de crates mensuales Moon" loading="lazy">
-          <span class="proj-badge">Kotlin</span>
-        </div>
-        <div class="proj-body">
-          <h3>Moon <span class="pmuted">monthly crates</span></h3>
-          <p>Plugin de crates mensuales construido sobre Lumen, con previews, animaciones, cooldowns por jugador y persistencia de Ventas y recompensas claims.</p>
-          <div class="chips small"><span>Kotlin</span><span>Lumen</span><span>Guards</span><span>Persistencia</span></div>
-          <div class="proj-foot">
-            <span class="proj-private"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg> repo privado</span>
-            <span class="proj-repo">Centry-Org/Moon</span>
-          </div>
-        </div>
+        </a>
+        <div class="repo-m"><span class="lock">privado</span><span class="c-d">Centry-Org/Moon</span></div>
       </article>
 
-      <article class="proj reveal" data-cat="plugin" data-tags="HCF">
-        <div class="proj-shot">
+      <article class="repo" data-c="plugin">
+        <span class="repo-n">08</span>
+        <div class="repo-t">
+          <h3>HCF <span class="c-d">Lazarus</span></h3>
+          <p>Servidor HCF completo: bandas, guerra, claims, ecommerce interno, roles y permisos de jugadores,
+             con integración de Morgan, Nobody, Vault y ShopGUIPlus.</p>
+          <p class="tags">java · spigot · vault · shopguiplus</p>
+        </div>
+        <a class="repo-thumb" href="assets/img/gallery-01.png" data-lb="assets/img/gallery-01.png" data-cap="Servidor HCF">
           <img src="assets/img/gallery-01.png" alt="Servidor HCF" loading="lazy">
-          <span class="proj-badge">Java</span>
-        </div>
-        <div class="proj-body">
-          <h3>HCF <span class="pmuted">Lazarus</span></h3>
-          <p>Servidor HCF completo: gestión de bandas, guerra, claims, ecommerce interno, roles y permisos de jugadores, con integración de Morgan, Nobody, Vault y ShopGUIPlus.</p>
-          <div class="chips small"><span>Java</span><span>Spigot</span><span>Vault</span><span>ShopGUIPlus</span></div>
-          <div class="proj-foot">
-            <a class="proj-link" href="https://github.com/wbtt2/HCF" target="_blank" rel="noopener">Ver repo <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
-            <span class="proj-repo">wbtt2/HCF</span>
-          </div>
-        </div>
+        </a>
+        <div class="repo-m"><a href="https://github.com/wbtt2/HCF" target="_blank" rel="noopener" class="pub">público ↗</a><span class="c-d">wbtt2/HCF</span></div>
       </article>
 
     </div>
@@ -496,284 +372,448 @@
 </section>
 
 <!-- ============ GALERÍA ============ -->
-<section class="section" id="galeria">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="sec-num">05</span>
-      <h2 class="sec-title"><span class="t-prompt">./</span>galería</h2>
-      <p class="sec-sub">Capturas de plugins, servidores y paneles — haz clic para ampliar</p>
-    </div>
-
-    <div class="gallery">
-      <figure class="g-item g-wide reveal">
-        <img src="assets/img/gallery-05.png" alt="Captura de un plugin en ejecución" loading="lazy" data-full="assets/img/gallery-05.png">
-        <figcaption>Plugin en producción</figcaption>
-      </figure>
-      <figure class="g-item reveal">
-        <img src="assets/img/gallery-02.png" alt="Interfaz de un plugin" loading="lazy" data-full="assets/img/gallery-02.png">
-        <figcaption>Interfaz y configuraciones</figcaption>
-      </figure>
-      <figure class="g-item reveal">
-        <img src="assets/img/gallery-03.png" alt="Detalle de un plugin" loading="lazy" data-full="assets/img/gallery-03.png">
-        <figcaption>Detalle de comando</figcaption>
-      </figure>
-      <figure class="g-item g-wide reveal">
-        <img src="assets/img/gallery-04.png" alt="Sistema de entidades y NPCs" loading="lazy" data-full="assets/img/gallery-04.png">
-        <figcaption>Entidades y NPCs</figcaption>
-      </figure>
-      <figure class="g-item reveal">
-        <img src="assets/img/gallery-06.png" alt="Hub core" loading="lazy" data-full="assets/img/gallery-06.png">
-        <figcaption>Hub core</figcaption>
-      </figure>
-      <figure class="g-item reveal">
-        <img src="assets/img/gallery-07.png" alt="Crates mensuales" loading="lazy" data-full="assets/img/gallery-07.png">
-        <figcaption>Crates mensuales</figcaption>
-      </figure>
-      <figure class="g-item g-wide reveal">
-        <img src="assets/img/gallery-01.png" alt="Servidor HCF" loading="lazy" data-full="assets/img/gallery-01.png">
-        <figcaption>Servidor HCF</figcaption>
-      </figure>
-      <figure class="g-item reveal">
-        <img src="assets/img/project-pipeline-1.png" alt="Panel web de Pipeline" loading="lazy" data-full="assets/img/project-pipeline-1.png">
-        <figcaption>Pipeline · panel web</figcaption>
-      </figure>
-      <figure class="g-item reveal">
-        <img src="assets/img/project-pipeline-2.png" alt="Logs de packets" loading="lazy" data-full="assets/img/project-pipeline-2.png">
-        <figcaption>Pipeline · logs de packets</figcaption>
-      </figure>
-      <figure class="g-item g-wide reveal">
-        <img src="assets/img/project-cobalt-spigot.png" alt="CobaltSpigot" loading="lazy" data-full="assets/img/project-cobalt-spigot.png">
-        <figcaption>CobaltSpigot</figcaption>
-      </figure>
-      <figure class="g-item reveal">
-        <img src="assets/img/project-cobalt-spigot-2.png" alt="CobaltSpigot en servidor" loading="lazy" data-full="assets/img/project-cobalt-spigot-2.png">
-        <figcaption>CobaltSpigot · servidor</figcaption>
-      </figure>
+<section class="sec" id="galeria">
+  <div class="wrap">
+    <h2 class="sec-h"><span class="c-d">05</span> <span class="c-g">/</span> galería</h2>
+    <div class="shots" id="shots">
+      <button class="shot" data-lb="assets/img/gallery-05.png" data-cap="Plugin en producción"><img src="assets/img/gallery-05.png" alt="Captura de un plugin en ejecución" loading="lazy"></button>
+      <button class="shot" data-lb="assets/img/gallery-01.png" data-cap="Servidor HCF"><img src="assets/img/gallery-01.png" alt="Servidor HCF" loading="lazy"></button>
+      <button class="shot" data-lb="assets/img/gallery-02.png" data-cap="Interfaz y configuraciones"><img src="assets/img/gallery-02.png" alt="Interfaz de un plugin" loading="lazy"></button>
+      <button class="shot" data-lb="assets/img/gallery-03.png" data-cap="Detalle de comando"><img src="assets/img/gallery-03.png" alt="Detalle de un comando" loading="lazy"></button>
+      <button class="shot" data-lb="assets/img/gallery-04.png" data-cap="Entidades y NPCs"><img src="assets/img/gallery-04.png" alt="Sistema de entidades y NPCs" loading="lazy"></button>
+      <button class="shot" data-lb="assets/img/gallery-06.png" data-cap="Hub core"><img src="assets/img/gallery-06.png" alt="Hub core" loading="lazy"></button>
+      <button class="shot" data-lb="assets/img/gallery-07.png" data-cap="Crates mensuales"><img src="assets/img/gallery-07.png" alt="Crates mensuales" loading="lazy"></button>
+      <button class="shot" data-lb="assets/img/project-pipeline-1.png" data-cap="Pipeline · panel web"><img src="assets/img/project-pipeline-1.png" alt="Panel web de Pipeline" loading="lazy"></button>
+      <button class="shot" data-lb="assets/img/project-pipeline-2.png" data-cap="Pipeline · logs de packets"><img src="assets/img/project-pipeline-2.png" alt="Logs de packets de Pipeline" loading="lazy"></button>
+      <button class="shot" data-lb="assets/img/project-cobalt-spigot.png" data-cap="CobaltSpigot"><img src="assets/img/project-cobalt-spigot.png" alt="CobaltSpigot" loading="lazy"></button>
+      <button class="shot" data-lb="assets/img/project-cobalt-spigot-2.png" data-cap="CobaltSpigot · servidor"><img src="assets/img/project-cobalt-spigot-2.png" alt="CobaltSpigot en servidor" loading="lazy"></button>
     </div>
   </div>
 </section>
 
 <!-- ============ CÓDIGO ============ -->
-<section class="section section-alt" id="codigo">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="sec-num">06</span>
-      <h2 class="sec-title"><span class="t-prompt">./</span>código</h2>
-      <p class="sec-sub">Fragmentos reales de mis plugins</p>
-    </div>
+<section class="sec sec-alt" id="codigo">
+  <div class="wrap">
+    <h2 class="sec-h"><span class="c-d">06</span> <span class="c-g">/</span> código</h2>
+    <p class="sec-note">Fragmentos literales de los repositorios de <b>Centry-Org</b>.</p>
 
-    <div class="code-window reveal">
+    <div class="code">
       <div class="code-tabs" id="codeTabs">
-        <button class="code-tab active" data-tab="tab-java">PacketLimiter.java</button>
-        <button class="code-tab" data-tab="tab-kotlin">Lumen · Kotlin</button>
-        <button class="code-tab" data-tab="tab-python">Tooling · Python</button>
-        <button class="code-tab" data-tab="tab-sql">MongoDB</button>
+        <button class="ctab on" data-t="t-hub">HubCore</button>
+        <button class="ctab" data-t="t-lumen">Lumen</button>
+        <button class="ctab" data-t="t-morgan">Morgan</button>
+        <button class="ctab" data-t="t-nobody">Nobody</button>
+        <button class="ctab" data-t="t-pipeline">Pipeline</button>
       </div>
 
-      <div class="code-pane active" id="tab-java">
-        <pre><code><span class="c-key">public</span> <span class="c-type">Verdict</span> <span class="c-fn">check</span>(<span class="c-type">UUID</span> playerId, <span class="c-type">Object</span> packet) {
-    <span class="c-type">State</span> state = states.<span class="c-fn">computeIfAbsent</span>(playerId, id <span class="c-op">-&gt;</span> <span class="c-key">new</span> <span class="c-type">State</span>());
-    <span class="c-key">long</span> second = System.<span class="c-fn">currentTimeMillis</span>() <span class="c-op">/</span> 1000L;
+      <div class="cpane on" id="t-hub">
+        <div class="cpath">HubCore/src/main/kotlin/io/github/wbt/hub/scoreboard/HubScoreboard.kt</div>
+        <pre><code class="lang-kotlin">package io.github.wbt.hub.scoreboard
 
-    <span class="c-key">synchronized</span> (state) {
-        <span class="c-key">if</span> (second <span class="c-op">!=</span> state.windowSecond) {
-            state.windowSecond = second;
-            state.packetsInSecond = 0;
-            state.packetsInSecondTotal = 0;
-            state.perType.<span class="c-fn">clear</span>();
+import io.github.wbt.hub.config.HubConfig
+import io.github.wbt.lumen.Lumen
+import io.github.wbt.lumen.scoreboard.config.ScoreboardConfiguration
+import io.github.wbt.lumen.scoreboard.construct.ScoreGetter
+import io.github.wbt.lumen.scoreboard.construct.TitleGetter
+
+object HubScoreboard {
+
+    fun register(settings: HubConfig) {
+        if (!settings.scoreboardEnabled) {
+            Lumen.scoreboards().configuration = null
+            return
         }
 
-        state.packetsInSecondTotal++;
+        Lumen.scoreboards().configuration = ScoreboardConfiguration()
+            .title(TitleGetter.of(settings.scoreboardTitle))
+            .scores(ScoreGetter.of(*settings.scoreboardLines.toTypedArray()))
+    }
+}</code></pre>
+        <div class="cpath">HubCore/src/main/kotlin/io/github/wbt/hub/nametag/HubNameTagProvider.kt</div>
+        <pre><code class="lang-kotlin">package io.github.wbt.hub.nametag
 
-        <span class="c-type">Integer</span> typeLimit = <span class="c-fn">limitFor</span>(packetName);
-        <span class="c-key">if</span> (typeLimit <span class="c-op">!=</span> <span class="c-key">null</span>) {
-            <span class="c-key">int</span> count = state.perType.<span class="c-fn">merge</span>(packetName, 1, Integer::<span class="c-op">sum</span>);
-            <span class="c-key">if</span> (count <span class="c-op">&gt;</span> typeLimit) {
-                <span class="c-fn">flag</span>(playerId, state, packetName + <span class="c-str">" over per-type limit ("</span>
-                        + count + <span class="c-str">"/"</span> + typeLimit + <span class="c-str">")"</span>);
-                <span class="c-key">return</span> observeMode ? Verdict.ALLOW : Verdict.DROP;
+import io.github.wbt.hub.util.Ranks
+import io.github.wbt.lumen.nametag.construct.NameTagInfo
+import io.github.wbt.lumen.nametag.provider.NameTagProvider
+import io.github.wbt.lumen.utils.LegacyText
+import org.bukkit.ChatColor
+import org.bukkit.entity.Player
+
+class HubNameTagProvider : NameTagProvider("Hub", 100) {
+
+    override fun fetchNameTag(toRefresh: Player, refreshFor: Player): NameTagInfo {
+        val rank = Ranks.rank(toRefresh.uniqueId)
+        val translated = ChatColor.translateAlternateColorCodes('&', rank.prefix + rank.color)
+        return createNameTag(LegacyText.truncate(translated, 16), "")
+    }
+}</code></pre>
+      </div>
+
+      <div class="cpane" id="t-lumen">
+        <div class="cpath">Lumen/src/main/kotlin/io/github/wbt/lumen/command/CommandManager.kt</div>
+        <pre><code class="lang-kotlin">package io.github.wbt.lumen.command
+
+import io.github.wbt.lumen.command.CommandService
+import io.github.wbt.lumen.command.LumenCommand
+import io.github.wbt.lumen.utils.CC
+import org.bukkit.Bukkit
+import org.bukkit.command.Command
+import org.bukkit.command.CommandMap
+import org.bukkit.command.CommandSender
+import org.bukkit.command.SimpleCommandMap
+import org.bukkit.plugin.Plugin
+import java.lang.reflect.Field
+import java.util.concurrent.ConcurrentHashMap
+
+internal class CommandManager : CommandService {
+    private val registered = ConcurrentHashMap&lt;String, Command&gt;()
+
+    private val commandMap: CommandMap by lazy {
+        val server = Bukkit.getServer()
+        val field: Field = server.javaClass.getDeclaredField("commandMap")
+        field.isAccessible = true
+        field.get(server) as CommandMap
+    }
+
+    override fun register(plugin: Plugin, command: LumenCommand) {
+        val bukkitCommand = object : Command(command.name, command.description, command.usage, command.aliases) {
+            override fun execute(sender: CommandSender, label: String, args: Array&lt;out String&gt;): Boolean {
+                if (command.permission != null &amp;&amp; !sender.hasPermission(command.permission)) {
+                    sender.sendMessage(CC.RED + "No permission.")
+                    return true
+                }
+                command.execute(sender, args.toList())
+                return true
+            }
+
+            override fun tabComplete(sender: CommandSender, alias: String, args: Array&lt;out String&gt;): MutableList&lt;String&gt; {
+                return command.complete(sender, args.toList()).toMutableList()
+            }
+        }
+        commandMap.register(plugin.name.lowercase(), bukkitCommand)
+        registered[command.name.lowercase()] = bukkitCommand
+    }
+
+    override fun unregister(name: String) {
+        val command = registered.remove(name.lowercase()) ?: return
+        command.unregister(commandMap)
+        if (commandMap is SimpleCommandMap) {
+            knownCommands()?.entries?.removeIf { it.value === command }
+        }
+    }
+
+    fun unregisterAll() {
+        registered.keys.toList().forEach { unregister(it) }
+    }
+
+    @Suppress("UNCHECKED_CAST")
+    private fun knownCommands(): MutableMap&lt;String, Command&gt;? {
+        return try {
+            val field = SimpleCommandMap::class.java.getDeclaredField("knownCommands")
+            field.isAccessible = true
+            field.get(commandMap) as MutableMap&lt;String, Command&gt;
+        } catch (ex: Exception) {
+            null
+        }
+    }
+}</code></pre>
+      </div>
+
+      <div class="cpane" id="t-morgan">
+        <div class="cpath">Morgan/commons/src/main/kotlin/io/github/wbt/morgan/cache/RedisCache.kt</div>
+        <pre><code class="lang-kotlin">package io.github.wbt.morgan.cache
+
+import com.google.gson.reflect.TypeToken
+import io.github.wbt.morgan.Morgan
+import io.github.wbt.morgan.redis.RedisPacketManager
+import java.lang.reflect.Type
+import java.util.concurrent.CompletableFuture
+
+abstract class RedisCache&lt;A, B&gt;(
+    var redisKey: String
+) {
+
+    var aToBCache: MutableMap&lt;A, B&gt; = mutableMapOf()
+    var btoACache: MutableMap&lt;B, A&gt; = mutableMapOf()
+
+    fun loadAllFromRedis() : CompletableFuture&lt;Void&gt;
+    {
+        return CompletableFuture.runAsync {
+            val type: Type = object : TypeToken&lt;MutableMap&lt;A, B&gt;&gt;() {}.type
+            val otherType: Type = object : TypeToken&lt;MutableMap&lt;B, A&gt;&gt;() {}.type
+            val start = System.currentTimeMillis()
+
+            RedisPacketManager.pool.resource.use {
+                val ex = it.exists("$redisKey:A")
+
+                //a -&gt; b cache
+                if (ex)
+                {
+                    val all = it.get("$redisKey:A")
+                    val gson = Morgan.gson.fromJson&lt;MutableMap&lt;A, B&gt;&gt;(all, type)
+
+                    this.aToBCache = gson
+                }
+
+                val ex2 = it.exists("$redisKey:B")
+
+                //b -&gt; a cache
+                if (ex2)
+                {
+                    val all = it.get("$redisKey:B")
+                    val gson = Morgan.gson.fromJson&lt;MutableMap&lt;B, A&gt;&gt;(all, otherType)
+
+                    this.btoACache = gson
+                }
+
+                println("Cache load for $redisKey loaded in ${System.currentTimeMillis().minus(start)}ms")
+            }
+
+        }
+    }
+
+    fun addToFirstCache(key: A, value: B) : CompletableFuture&lt;B&gt;
+    {
+        return CompletableFuture.supplyAsync {
+            aToBCache[key] = value
+
+            RedisPacketManager.pool.resource.use {
+                it.set(
+                    "$redisKey:A",
+                    Morgan.gson.toJson(aToBCache)
+                )
+            }
+            value
+        }
+    }
+}</code></pre>
+      </div>
+
+      <div class="cpane" id="t-nobody">
+        <div class="cpath">Nobody/src/main/java/io/github/wbt/nobody/compat/menu/Menu.java</div>
+        <pre><code class="lang-java">package io.github.wbt.nobody.compat.menu;
+
+import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
+import org.bukkit.entity.Player;
+import org.bukkit.event.inventory.ClickType;
+import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.InventoryHolder;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.UUID;
+
+public abstract class Menu {
+
+    public boolean isUpdateAfterClick = true;
+
+    private final Map&lt;UUID, Map&lt;Integer, Button&gt;&gt; buttons = new HashMap&lt;&gt;();
+
+    public abstract int size(Player player);
+
+    public abstract String getTitle(Player player);
+
+    public abstract Map&lt;Integer, Button&gt; getButtons(Player player);
+
+    public final void openMenu(Player player) {
+        final Map&lt;Integer, Button&gt; buttons = this.getButtons(player);
+
+        this.buttons.put(player.getUniqueId(), buttons);
+
+        final Inventory inventory = Bukkit.createInventory(new MenuHolder(this), this.size(player), color(this.getTitle(player)));
+
+        for (final Map.Entry&lt;Integer, Button&gt; entry : buttons.entrySet()) {
+            if (entry.getKey() != null &amp;&amp; entry.getKey() &gt;= 0 &amp;&amp; entry.getKey() &lt; inventory.getSize()) {
+                inventory.setItem(entry.getKey(), entry.getValue().getButtonItem(player));
             }
         }
 
-        <span class="c-key">if</span> (maxPps <span class="c-op">&gt;</span> 0) {
-            state.packetsInSecond++;
-            <span class="c-key">if</span> (state.packetsInSecond <span class="c-op">&gt;</span> maxPps) {
-                <span class="c-key">if</span> (dropOverLimit <span class="c-op">&amp;&amp;</span> <span class="c-op">!</span>observeMode) {
-                    <span class="c-key">return</span> <span class="c-fn">decideKick</span>(state);
+        currentlyOpened.put(player.getUniqueId(), this);
+
+        player.openInventory(inventory);
+    }
+
+    public final void handleClick(Player player, int slot, ClickType clickType) {
+        final Map&lt;Integer, Button&gt; buttons = this.buttons.get(player.getUniqueId());
+
+        if (buttons == null) {
+            return;
+        }
+
+        final Button button = buttons.get(slot);
+
+        if (button == null) {
+            return;
+        }
+
+        button.clicked(player, slot, clickType);
+
+        if (this.isUpdateAfterClick &amp;&amp; currentlyOpened.get(player.getUniqueId()) == this) {
+            final Inventory inventory = player.getOpenInventory().getTopInventory();
+
+            if (inventory.getHolder() instanceof MenuHolder &amp;&amp; ((MenuHolder) inventory.getHolder()).menu == this) {
+                for (final Map.Entry&lt;Integer, Button&gt; entry : buttons.entrySet()) {
+                    if (entry.getKey() != null &amp;&amp; entry.getKey() &gt;= 0 &amp;&amp; entry.getKey() &lt; inventory.getSize()) {
+                        inventory.setItem(entry.getKey(), entry.getValue().getButtonItem(player));
+                    }
+                }
+
+                player.updateInventory();
+            }
+        }
+    }
+
+    public final void handleClose(Player player) {
+        if (currentlyOpened.get(player.getUniqueId()) == this) {
+            currentlyOpened.remove(player.getUniqueId());
+        }
+
+        this.buttons.remove(player.getUniqueId());
+    }
+
+    private static final Map&lt;UUID, Menu&gt; currentlyOpened = new HashMap&lt;&gt;();
+
+    public static Map&lt;UUID, Menu&gt; getCurrentlyOpenedMenus() {
+        return currentlyOpened;
+    }
+
+    public static String color(String text) {
+        return ChatColor.translateAlternateColorCodes('&', text);
+    }
+}</code></pre>
+      </div>
+
+      <div class="cpane" id="t-pipeline">
+        <div class="cpath">Pipeline/src/main/java/io/github/wbt/pipeline/limiter/PacketLimiter.java</div>
+        <pre><code class="lang-java">public final class PacketLimiter {
+
+    public enum Verdict {ALLOW, DROP, KICK}
+
+    // Legacy (pre-1.17) packet names -&gt; modern normalized name, so old config keys keep working.
+    private static final Map&lt;String, String&gt; LEGACY_ALIASES = Map.ofEntries(
+            Map.entry("windowclick", "containerclick"),
+            Map.entry("setcreativeslot", "setcreativemodeslot"),
+            Map.entry("blockplace", "useitemon"),
+            Map.entry("usesitem", "useitem"),
+            Map.entry("blockdig", "playeraction"),
+            Map.entry("flying", "moveplayer"),
+            Map.entry("look", "moveplayer"),
+            Map.entry("position", "moveplayer"),
+            Map.entry("positionlook", "moveplayer"),
+            Map.entry("armanimation", "swing"),
+            Map.entry("helditemslot", "setheldslot"),
+            Map.entry("entityaction", "playercommand")
+    );
+
+    public Verdict check(UUID playerId, Object packet) {
+        if (maxPps &lt;= 0 &amp;&amp; packetLimits.isEmpty()) {
+            return Verdict.ALLOW;
+        }
+
+        String packetName = PacketNames.of(packet);
+        State state = states.computeIfAbsent(playerId, id -&gt; new State());
+        long second = System.currentTimeMillis() / 1000L;
+
+        synchronized (state) {
+            if (second != state.windowSecond) {
+                state.windowSecond = second;
+                state.packetsInSecond = 0;
+                state.packetsInSecondTotal = 0;
+                state.perType.clear();
+            }
+
+            state.packetsInSecondTotal++;
+
+            Integer typeLimit = limitFor(packetName);
+            if (typeLimit != null) {
+                int count = state.perType.merge(packetName, 1, Integer::sum);
+                if (count &gt; typeLimit) {
+                    flag(playerId, state, packetName + " over per-type limit (" + count + "/" + typeLimit + ")");
+                    return observeMode ? Verdict.ALLOW : Verdict.DROP;
+                }
+            }
+
+            if (maxPps &gt; 0) {
+                state.packetsInSecond++;
+                if (state.packetsInSecond &gt; maxPps) {
+                    if (state.packetsInSecond == maxPps + 1 || state.packetsInSecond % 50 == 0) {
+                        flag(playerId, state, "PPS " + state.packetsInSecondTotal + "/" + maxPps);
+                    }
+                    if (dropOverLimit &amp;&amp; !observeMode) {
+                        return decideKick(state);
+                    }
                 }
             }
         }
+        return Verdict.ALLOW;
     }
-    <span class="c-key">return</span> Verdict.ALLOW;
-}</code></pre>
-      </div>
 
-      <div class="code-pane" id="tab-kotlin">
-        <pre><code><span class="c-key">object</span> <span class="c-type">MongoStorage</span> {
-
-    <span class="c-key">private val</span> client = MongoClients.<span class="c-fn">create</span>(Settings.builder()
-        .<span class="c-fn">applyConnectionString</span>(<span class="c-fn">config</span>(<span class="c-str">"mongo.uri"</span>))
-        .<span class="c-fn">build</span>())
-
-    <span class="c-key">private val</span> database = client.<span class="c-fn">getDatabase</span>(<span class="c-fn">config</span>(<span class="c-str">"mongo.database"</span>))
-
-    <span class="c-key">fun</span> <span class="c-type">loadPlayer</span>(uuid: <span class="c-type">UUID</span>): <span class="c-type">PlayerData</span>? =
-        database.<span class="c-fn">getCollection</span>&lt;<span class="c-type">PlayerData</span>&gt;(<span class="c-str">"players"</span>)
-            .<span class="c-fn">find</span>(Filters.<span class="c-fn">eq</span>(<span class="c-str">"_id"</span>, uuid.<span class="c-fn">toString</span>()))
-            .<span class="c-fn">first</span>()
-            ?.<span class="c-fn">let</span> { <span class="c-fn">decode</span>&lt;<span class="c-type">PlayerData</span>&gt;(it) }
-
-    <span class="c-key">fun</span> <span class="c-type">savePlayer</span>(data: <span class="c-type">PlayerData</span>) {
-        database.<span class="c-fn">getCollection</span>&lt;<span class="c-type">PlayerData</span>&gt;(<span class="c-str">"players"</span>)
-            .<span class="c-fn">replaceOne</span>(
-                Filters.<span class="c-fn">eq</span>(<span class="c-str">"_id"</span>, data.uuid.<span class="c-fn">toString</span>()),
-                data,
-                <span class="c-type">ReplaceOptions</span>().<span class="c-fn">upsert</span>(<span class="c-key">true</span>)
-            )
+    private void decay() {
+        long now = System.currentTimeMillis();
+        Iterator&lt;Map.Entry&lt;UUID, State&gt;&gt; iterator = states.entrySet().iterator();
+        while (iterator.hasNext()) {
+            Map.Entry&lt;UUID, State&gt; entry = iterator.next();
+            State state = entry.getValue();
+            synchronized (state) {
+                state.vl = Math.max(0, state.vl - decayPerInterval);
+                if (state.vl == 0) {
+                    state.alertStep = 0;
+                }
+            }
+            boolean idle = now - (state.windowSecond * 1000L) &gt; 60_000L;
+            if (state.vl == 0 &amp;&amp; (idle || plugin.getServer().getPlayer(entry.getKey()) == null)) {
+                iterator.remove();
+            }
+        }
     }
 }</code></pre>
-      </div>
-
-      <div class="code-pane" id="tab-python">
-        <pre><code><span class="c-key">import</span> subprocess
-<span class="c-key">from</span> pathlib <span class="c-key">import</span> Path
-
-<span class="c-key">def</span> <span class="c-fn">build</span>(project: <span class="c-type">str</span>, version: <span class="c-type">str</span>) <span class="c-op">-&gt;</span> <span class="c-type">Path</span>:
-    <span class="c-str">"""Compila el plugin y deja el JAR en target/."""</span>
-    root = Path(<span class="c-str">"C:/repos"</span>) / project
-    result = subprocess.<span class="c-fn">run</span>(
-        [<span class="c-str">"mvn"</span>, <span class="c-str">"-q"</span>, <span class="c-str">"clean"</span>, <span class="c-str">"package"</span>],
-        cwd=root, capture_output=<span class="c-key">True</span>, text=<span class="c-key">True</span>
-    )
-    <span class="c-key">if</span> result.returncode <span class="c-op">!=</span> 0:
-        <span class="c-key">raise</span> <span class="c-type">RuntimeError</span>(result.stderr[-2000:])
-
-    jars = <span class="c-fn">sorted</span>((root / <span class="c-str">"target"</span>).<span class="c-fn">glob</span>(<span class="c-str">"*.jar"</span>),
-                   key=<span class="c-key">lambda</span> p: p.stat().st_mtime)
-    <span class="c-key">return</span> jars[-1]
-
-
-<span class="c-key">def</span> <span class="c-fn">deploy</span>(jar: <span class="c-type">Path</span>, server: <span class="c-type">str</span>) <span class="c-op">-&gt;</span> <span class="c-key">None</span>:
-    <span class="c-str">"""Sube el JAR al servidor y lo reinicia de forma segura."""</span>
-    plugins = <span class="c-type">Path</span>(server) / <span class="c-str">"plugins"</span>
-    plugins.<span class="c-fn">mkdir</span>(parents=<span class="c-key">True</span>, exist_ok=<span class="c-key">True</span>)
-    shutil.<span class="c-fn">copy2</span>(jar, plugins / jar.name)
-    subprocess.<span class="c-fn">run</span>([<span class="c-str">"systemctl"</span>, <span class="c-str">"restart"</span>, server], check=<span class="c-key">True</span>)</code></pre>
-      </div>
-
-      <div class="code-pane" id="tab-sql">
-        <pre><code><span class="c-cmt">-- Pipeline · persistencia de Violation Level y eventos</span>
-<span class="c-key">CREATE TABLE</span> <span class="c-key">IF NOT EXISTS</span> player_violations (
-    player_uuid   <span class="c-type">UUID</span>        <span class="c-key">NOT NULL</span>,
-    violation_lvl <span class="c-type">INTEGER</span>     <span class="c-key">NOT NULL</span> <span class="c-key">DEFAULT</span> 0,
-    packet_count  <span class="c-type">BIGINT</span>      <span class="c-key">NOT NULL</span> <span class="c-key">DEFAULT</span> 0,
-    last_alert_at <span class="c-type">TIMESTAMPTZ</span>,
-    <span class="c-key">PRIMARY KEY</span> (player_uuid)
-);
-
-<span class="c-key">CREATE INDEX</span> <span class="c-key">IF NOT EXISTS</span> idx_violations_lvl
-    <span class="c-key">ON</span> player_violations (violation_lvl <span class="c-key">DESC</span>);
-
-<span class="c-cmt">-- Cache de datos en Redis + histórico de eventos en PostgreSQL</span>
-<span class="c-key">SELECT</span> p.uuid, p.name, <span class="c-fn">COALESCE</span>(v.violation_lvl, 0) <span class="c-key">AS</span> vl
-<span class="c-key">FROM</span> players p
-<span class="c-key">LEFT JOIN</span> player_violations v <span class="c-key">ON</span> v.player_uuid = p.uuid
-<span class="c-key">WHERE</span> p.last_seen <span class="c-op">&gt;</span> <span class="c-fn">NOW</span>() <span class="c-op">-</span> <span class="c-key">INTERVAL</span> <span class="c-str">'30 days'</span>
-<span class="c-key">ORDER BY</span> vl <span class="c-key">DESC</span>
-<span class="c-key">LIMIT</span> 50;</code></pre>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ============ CONTACTO ============ -->
-<section class="section" id="contacto">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="sec-num">07</span>
-      <h2 class="sec-title"><span class="t-prompt">./</span>contacto</h2>
-      <p class="sec-sub">¿Necesitas un plugin a medida o mantenimiento del que ya tienes?</p>
-    </div>
+<section class="sec" id="contacto">
+  <div class="wrap">
+    <h2 class="sec-h"><span class="c-d">07</span> <span class="c-g">/</span> contacto</h2>
+    <p class="sec-note">Disponible para plugins a medida, mantenimiento de plugins existentes y soporte de servidores.</p>
 
-    <div class="contact-grid">
-      <a class="c-card reveal" href="https://github.com/wbtt2" target="_blank" rel="noopener">
-        <span class="c-ico">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 1.7 2.6 1.2 3.3.9.1-.7.4-1.2.7-1.5-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C17.3 4.7 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .4.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5Z"/></svg>
-        </span>
-        <span class="c-body">
-          <b>GitHub</b>
-          <span>@wbtt2</span>
-        </span>
-        <span class="c-go">→</span>
+    <div class="contacts">
+      <a class="ct" href="https://github.com/wbtt2" target="_blank" rel="noopener">
+        <span class="ct-k">github</span><span class="ct-v">wbtt2</span><span class="ct-x">↗</span>
       </a>
-
-      <a class="c-card reveal" href="https://github.com/Centry-Org" target="_blank" rel="noopener">
-        <span class="c-ico">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg>
-        </span>
-        <span class="c-body">
-          <b>Organización</b>
-          <span>Centry-Org</span>
-        </span>
-        <span class="c-go">→</span>
+      <a class="ct" href="https://github.com/Centry-Org" target="_blank" rel="noopener">
+        <span class="ct-k">org</span><span class="ct-v">Centry-Org</span><span class="ct-x">↗</span>
       </a>
-
-      <div class="c-card reveal" href="#" data-copy="wbbtt">
-        <span class="c-ico">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg>
-        </span>
-        <span class="c-body">
-          <b>Discord</b>
-          <span id="discord-handle">@wbbtt</span>
-        </span>
-        <span class="c-go copy-hint" id="copyHint">copiar</span>
-      </div>
-
-      <div class="c-card reveal" href="#" data-copy="francisco.soportes@gmail.com">
-        <span class="c-ico">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-        </span>
-        <span class="c-body">
-          <b>Email</b>
-          <span id="email-text">francisco.soportes@gmail.com</span>
-        </span>
-        <span class="c-go copy-hint" id="copyHint2">copiar</span>
-      </div>
+      <button class="ct" data-copy="wbbtt">
+        <span class="ct-k">discord</span><span class="ct-v">@wbbtt</span><span class="ct-x" data-hint>copiar</span>
+      </button>
+      <button class="ct" data-copy="francisco.soportes@gmail.com">
+        <span class="ct-k">email</span><span class="ct-v">francisco.soportes@gmail.com</span><span class="ct-x" data-hint>copiar</span>
+      </button>
     </div>
 
-    <div class="cta reveal">
-      <p class="cta-line"><span class="t-prompt">$</span> ./contacto.sh --nuevo-proyecto</p>
-      <p class="cta-sub">Disponible para plugins a medida, mantenimiento de plugins existentes y soporte de servidores.</p>
-    </div>
+    <p class="cmd">
+      <span class="c-g">$</span> ./contacto.sh --nuevo-proyecto --spigot
+    </p>
   </div>
 </section>
 
 </main>
 
-<!-- ============ FOOTER ============ -->
-<footer class="footer">
-  <div class="container foot-inner">
-    <div class="foot-left">
-      <span class="foot-prompt">&gt;</span> <span id="year">2026</span> — <strong>Francisco (@wbt)</strong> · Centry Organizations
-    </div>
-    <div class="foot-right">
-      <a href="https://github.com/wbtt2" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://github.com/Centry-Org" target="_blank" rel="noopener">Centry-Org</a>
-      <a href="#hero" class="to-top">↑ arriba</a>
-    </div>
+<footer class="foot">
+  <div class="wrap foot-in">
+    <span><span class="c-g">&gt;</span> <span id="year">2026</span> francisco (@wbt) · centry organizations</span>
+    <span class="foot-r"><a href="#top">inicio ↑</a></span>
   </div>
-  <div class="foot-bg" aria-hidden="true">wbt</div>
 </footer>
 
-<!-- ============ LIGHTBOX ============ -->
-<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
-  <button class="lb-close" id="lbClose" aria-label="Cerrar">✕</button>
-  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Anterior">‹</button>
-  <figure class="lb-figure">
-    <img id="lbImage" src="" alt="">
-    <figcaption id="lbCaption"></figcaption>
-  </figure>
-  <button class="lb-nav lb-next" id="lbNext" aria-label="Siguiente">›</button>
+<div class="lb" id="lb" aria-hidden="true" role="dialog" aria-modal="true">
+  <button class="lb-x" id="lbX" aria-label="Cerrar">esc</button>
+  <button class="lb-a lb-p" id="lbP" aria-label="Anterior">←</button>
+  <figure class="lb-f"><img id="lbImg" src="" alt=""><figcaption id="lbCap"></figcaption></figure>
+  <button class="lb-a lb-n" id="lbN" aria-label="Siguiente">→</button>
 </div>
 
 <script src="assets/js/main.js"></script>
